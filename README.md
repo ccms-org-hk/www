@@ -1,3 +1,16 @@
+
+# My Steps
+
+npx create-react-app www --template typescript
+cd www
+rm README.old.md
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+npm -i markdown-to-jsx
+
+Create a file globals.d.ts in the src folder (has to be in src to work), add:
+declare module '*.md';
+https://stackoverflow.com/questions/44678315/how-to-import-markdown-md-file-in-typescript
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
