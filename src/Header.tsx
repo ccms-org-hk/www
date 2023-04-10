@@ -19,7 +19,10 @@ export default function Header(props: HeaderProps) {
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Toolbar sx={{ 
+        // borderBottom: 1, 
+        // borderColor: 'divider' 
+      }}>
         {<img src='ccms-logo-330.jpg' alt='' />}
 
         {/* <Button size="small">Subscribe</Button> */}
@@ -46,7 +49,7 @@ export default function Header(props: HeaderProps) {
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'flex-end', overflowX: 'auto' }}
+        sx={{ justifyContent: 'flex-end', overflowX: 'auto',}}
       >
         {sections.map((section) => (
           <Link
@@ -55,9 +58,9 @@ export default function Header(props: HeaderProps) {
             key={section.title}
             variant="body2"
             href={section.url}
-            sx={{ p: 1, flexShrink: 0 }}
+            sx={{ p:1, flexShrink:0, textDecoration:'none',}}
           >
-            {section.title}
+            <Typography variant="h6">{section.title}</Typography>
           </Link>
         ))}
       </Toolbar>
