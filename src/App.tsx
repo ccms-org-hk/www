@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home';
 import Sermon from './Sermon';
+import YearPlan from './YearPlan';
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
               <Route index element={<Home />} />
               <Route path='home' element={<Home />} />
               <Route path='sermon' element={<Sermon />} />
+              <Route path='year-plan' element={<YearPlan />} />
               {/* <Route path='*' element={<NoMatch />} /> */}
           </Route>
       </Routes>
     </div>
-    
+
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
