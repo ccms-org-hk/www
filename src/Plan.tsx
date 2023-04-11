@@ -8,6 +8,7 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import Banner from './Banner';
+import Event from './Event';
 import Footer from './Footer';
 import bg from './assets/bg.png';
 
@@ -19,6 +20,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+
 
 const sections = [
   { title: '主頁', url: './home' },
