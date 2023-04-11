@@ -21,8 +21,8 @@ const sections = [
   { title: '主頁', url: './home' },
   { title: '聚會時間', url: '#' },
   { title: '崇拜講道', url: './sermon' },
-  { title: '行事曆', url: './year-plan' },
-  { title: '聯絡我們', url: '#' },
+  { title: '行事曆', url: './plan' },
+  { title: '聯絡我們', url: '.contact' },
 ];
 
 const mainBanner = {
@@ -89,7 +89,7 @@ const theme = createTheme({
       styleOverrides: {
         body: {
           backgroundColor: '#E0E0E0',
-          backgroundImage: {bg},
+          backgroundImage: `url(${bg})`,
           backgroundRepeat: 'repeat',
           // "& h1": {
           //   color: "black"

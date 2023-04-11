@@ -25,7 +25,8 @@ export default function FeaturedPost(props: FeaturedPostProps) {
         <Card sx={{ height:'100%',}}>
           <CardMedia
             component="img"
-            sx={{ height: 160, 
+            sx={{ height: 180, 
+              filter: 'brightness(90%)',
               // display: { xs: 'none', sm: 'block' } 
             }}
             image={post.image}

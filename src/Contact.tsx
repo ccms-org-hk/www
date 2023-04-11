@@ -1,0 +1,151 @@
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Link from '@mui/material/Link';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Header from './Header';
+import Banner from './Banner';
+import Footer from './Footer';
+import bg from './assets/bg.png';
+
+const sections = [
+  { title: '主頁', url: './home' },
+  { title: '聚會時間', url: '#' },
+  { title: '崇拜講道', url: './sermon' },
+  { title: '行事曆', url: './plan' },
+  { title: '聯絡我們', url: './contact' },
+];
+
+const mainBanner = {
+  title: '基督教芥菜種子堂',
+  description: '十週年特刊',
+  image: 'banner-10th.png',
+  imageText: 'main image description',
+  linkText: '歡迎下載',
+};
+
+// const theme = createTheme();
+const theme = createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: '#E0E0E0',
+          backgroundImage: `url(${bg})`,
+          backgroundRepeat: 'repeat',
+          // "& h1": {
+          //   color: "black"
+          // }
+        }
+      }
+    }
+  }
+});
+
+export default function Contact() {
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
+        <Header title="Blog" sections={sections} />
+        <main>
+          <Banner post={mainBanner} />
+
+          <Grid container spacing={4} sx={{px:'30px',}}>
+            <Grid item xs={12} md={12}>
+              <Card sx={{ height:'100%',}}>
+                <CardContent sx={{textAlign:'left',}}>
+                  ABC
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+
+          <Grid container spacing={4} sx={{px:'30px', mt:'20px',}}>
+            {/* Column 1 */}
+            <Grid item xs={12} md={4}>
+              <Card variant="outlined" sx={{ height:'100%', border:0,}}>
+                <CardContent sx={{textAlign:'left',}}>
+                  <Typography component="h2" variant="h5" sx={{mb:1}}>
+                  教牧同工
+                  </Typography>
+
+                  <Typography variant="subtitle1" color="text.secondary">
+                    教會堂主任　：錢國偉 牧師<br/>
+                    義務傳道　　：賀文亮 傳道<br/>
+                    義務助理傳道：孔德承 傳道<br/>
+                    義務顧問　　：李潤洪 牧師
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            {/* Column 2 */}
+            <Grid item xs={12} md={4}>
+              <Card variant="outlined" sx={{ height:'100%', border:0,}}>
+                <CardContent sx={{textAlign:'left',}}>
+                  <Typography component="h2" variant="h5" sx={{mb:1}}>
+                    地址
+                  </Typography>
+                  <Typography variant="subtitle1" color="text.secondary">
+                    深水埗九江街140-142號華苑1/F<br/>（深水埗港鐵站D2出口）
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            {/* Column 3 */}
+            <Grid item xs={12} md={4}>
+              <Card variant="outlined" sx={{ height:'100%', border:0,}}>
+                <CardContent sx={{textAlign:'left',}}>
+                  <Typography component="h2" variant="h5" sx={{mb:1}}>
+                    電郵
+                  </Typography>
+                  <Typography variant="subtitle1" color="text.secondary">
+                    <Link
+                      color="inherit"
+                      noWrap
+                      variant="subtitle1"
+                      href="mailto:ccmustardseed@gmail.com"
+                      sx={{textDecoration:'none', color:'#726d5f',}}
+                    >
+                    ccmustardseed@gmail.com
+                    </Link>
+                  </Typography>
+
+                  <Typography component="h2" variant="h5" sx={{mb:1, mt:8,}}>
+                    電話及傳真
+                  </Typography>
+                  <Typography variant="subtitle1" color="text.secondary">
+                  電話：          
+                  <Link
+                    color="inherit"
+                    noWrap
+                    variant="subtitle1"
+                    href="tel:25914433"
+                    sx={{textDecoration:'none', color:'#726d5f',}}
+                  >2591 4433</Link>　或　
+                  <Link
+                    color="inherit"
+                    noWrap
+                    variant="subtitle1"
+                    href="tel:22176372"
+                    sx={{textDecoration:'none', color:'#726d5f',}}
+                  >2217 6372</Link><br/>
+                  傳真：2591 5551
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+
+        </main>
+        <Footer />
+      </Container>
+    </ThemeProvider>
+  );
+}

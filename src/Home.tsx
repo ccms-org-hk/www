@@ -16,13 +16,16 @@ import Footer from './Footer';
 // import post2 from './blog-post.2.md';
 // import post3 from './blog-post.3.md';
 import bg from './assets/bg.png';
+import ccmsName from './assets/mustard-seed.jpg';
+import ccmsMission from './assets/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg';
+import ccmsModel from './assets/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.jpg';
 
 const sections = [
   { title: '主頁', url: './home' },
   { title: '聚會時間', url: '#' },
   { title: '崇拜講道', url: './sermon' },
-  { title: '行事曆', url: './year-plan' },
-  { title: '聯絡我們', url: '#' },
+  { title: '行事曆', url: './plan' },
+  { title: '聯絡我們', url: './contact' },
 ];
 
 const mainBanner = {
@@ -39,7 +42,7 @@ const featuredPosts = [
     date: '',
     description:
       '源於《馬太福音十三31-32》的啟發。耶穌以「芥菜種」比作「天國」，道出了「天國」由小而大的成長法則；另外，「種子」在聖經中又比作「神的道」這正突顯我們從神所領受的使命。基督教芥菜種子堂之命名，也就代表我們願意靠著神的恩典，致力活出使命，並盼望成為傳揚及擴展天國的教會群體。',
-    image: 'https://source.unsplash.com/random',
+    image: `${ccmsName}`,
     imageLabel: 'Image Text',
   },
   {
@@ -47,7 +50,7 @@ const featuredPosts = [
     date: '',
     description:
       '我們是一間聽神的道、領受神的道、傳講神的道的教會！（參考：帖前 2:13）我們的期望，就是要塑造弟兄姊妹成為一個聽道而行道的基督徒，從認識、領受、以至傳講神的道為生命追求的方向，作一個知行合一的事奉者。（參考：太 7:24）',
-    image: 'https://source.unsplash.com/random',
+    image: `${ccmsMission}`,
     imageLabel: 'Image Text',
   },
   {
@@ -55,7 +58,7 @@ const featuredPosts = [
     date: '',
     description:
       '本教會採納了艾力•蓋格《簡約教會》一書的理念來制定教會的事工。其重點在於設計一個簡單的培育門徒流程，它必須清晰，必須推動人們邁向成熟，必須與教會上下完全結合，並且必須清除周圍阻塞它的雜物。',
-    image: 'https://source.unsplash.com/random',
+    image: `${ccmsModel}`,
     imageLabel: 'Image Text',
   },
 ];
@@ -93,7 +96,7 @@ const theme = createTheme({
       styleOverrides: {
         body: {
           backgroundColor: '#E0E0E0',
-          backgroundImage: {bg},
+          backgroundImage: `url(${bg})`,
           backgroundRepeat: 'repeat',
           // "& h1": {
           //   color: "black"

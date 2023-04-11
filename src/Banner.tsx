@@ -25,7 +25,7 @@ export default function Banner(props: BannerProps) {
         position: 'relative',
         backgroundColor: 'grey.800',
         color: '#fff',
-        mb: 6,
+        mb: 7,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

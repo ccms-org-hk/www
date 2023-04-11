@@ -4,7 +4,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Home';
 import Sermon from './Sermon';
-import YearPlan from './YearPlan';
+import Plan from './Plan';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
               <Route index element={<Home />} />
               <Route path='home' element={<Home />} />
               <Route path='sermon' element={<Sermon />} />
-              <Route path='year-plan' element={<YearPlan />} />
+              <Route path='plan' element={<Plan />} />
+              <Route path='contact' element={<Contact />} />
               {/* <Route path='*' element={<NoMatch />} /> */}
           </Route>
       </Routes>
