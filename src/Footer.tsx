@@ -6,39 +6,30 @@ import Link from '@mui/material/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
+    <Typography variant="body2" align="center">
+      {'© '}
       {new Date().getFullYear()}
-      {'.'}
+      {' '}
+      <Link color="inherit" href="https://ccms.org.hk/" sx={{textDecoration:'none',}}>
+      基督教芥菜種子堂
+      </Link>
+      {' 版權所有'}
     </Typography>
   );
 }
 
-interface FooterProps {
-  description: string;
-  title: string;
-}
-
-export default function Footer(props: FooterProps) {
-  const { description, title } = props;
-
+export default function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: 'background.paper', py: 6 }}>
+    <Box component="footer" sx={{ 
+      borderRadius:1,
+      borderTopLeftRadius:1,          
+      borderTopRightRadius:1,  
+      bgcolor: '#968f7b',
+      color: '#ffffff',
+      py: 2,
+      mt: '60px',
+    }}>
       <Container maxWidth="lg">
-        <Typography variant="h6" align="center" gutterBottom>
-          {title}
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          {description}
-        </Typography>
         <Copyright />
       </Container>
     </Box>

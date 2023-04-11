@@ -4,8 +4,9 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import BannerImage from './assets/banner-10th.png';
 
-interface MainFeaturedPostProps {
+interface BannerProps {
   post: {
     description: string;
     image: string;
@@ -15,7 +16,7 @@ interface MainFeaturedPostProps {
   };
 }
 
-export default function MainFeaturedPost(props: MainFeaturedPostProps) {
+export default function Banner(props: BannerProps) {
   const { post } = props;
 
   return (
@@ -24,16 +25,19 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
         position: 'relative',
         backgroundColor: 'grey.800',
         color: '#fff',
-        mb: 4,
+        mb: 6,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(${post.image})`,
+        // backgroundImage: `url(${post.image})`,
+        backgroundImage: `url(${BannerImage})`,
+        borderRadius: 0,
         height: '330px',
       }}
     >
       {/* Increase the priority of the hero background image */}
-      {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
+      {/* {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />} */}
+      {<img style={{ display: 'none' }} src={BannerImage} alt={post.imageText} />}
       <Box
         sx={{
           position: 'absolute',
@@ -51,15 +55,16 @@ export default function MainFeaturedPost(props: MainFeaturedPostProps) {
               position: 'relative',
               p: { xs: 3, md: 6 },
               pr: { md: 0 },
+              textAlign: 'left',
             }}
           >
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography variant="subtitle1" color="inherit" gutterBottom sx={{fontStyle: 'italic'}}>
               {post.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            <Typography component="h1" variant="h3" color="inherit" paragraph sx={{fontStyle: 'italic'}}>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
+            <Link variant="h6" href="#" sx={{textDecoration:'none', color:'#ffffff', fontStyle: 'italic'}}>
               {post.linkText}
             </Link>
           </Box>

@@ -1,10 +1,11 @@
 import * as React from 'react';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
+// import Button from '@mui/material/Button';
+// import IconButton from '@mui/material/IconButton';
+// import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Logo from './assets/ccms-logo-330.jpg';
 
 interface HeaderProps {
   sections: ReadonlyArray<{
@@ -15,7 +16,10 @@ interface HeaderProps {
 }
 
 export default function Header(props: HeaderProps) {
-  const { sections, title } = props;
+  const { 
+    sections, 
+    // title, 
+  } = props;
 
   return (
     <React.Fragment>
@@ -23,7 +27,7 @@ export default function Header(props: HeaderProps) {
         // borderBottom: 1, 
         // borderColor: 'divider' 
       }}>
-        {<img src='ccms-logo-330.jpg' alt='' />}
+        <img src={Logo} alt='' />
 
         {/* <Button size="small">Subscribe</Button> */}
 
@@ -58,7 +62,7 @@ export default function Header(props: HeaderProps) {
             key={section.title}
             variant="body2"
             href={section.url}
-            sx={{ p:1, flexShrink:0, textDecoration:'none',}}
+            sx={{ p:2, flexShrink:0, textDecoration:'none', color:'#726d5f', fontWeight:'400',}}
           >
             <Typography variant="h6">{section.title}</Typography>
           </Link>

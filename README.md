@@ -11,6 +11,18 @@ Create a file globals.d.ts in the src folder (has to be in src to work), add:
 declare module '*.md';
 https://stackoverflow.com/questions/44678315/how-to-import-markdown-md-file-in-typescript
 
+npm i react-router-dom
+think-twice-beore-run: npm audit fix
+think-twice-beore-run: npm audit fix --force
+
+vi package.json
+"start": "PORT=3001 react-scripts start"
+
+npm i xlsx
+npm i convert-excel-to-json
+npm uninstall xlsx
+npm uninstall convert-excel-to-json
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

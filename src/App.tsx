@@ -1,10 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Blog from './Blog';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './Home';
+import Sermon from './Sermon';
 
 function App() {
   return (
+    <div className='App'>
+      <Routes>
+          <Route path='/'>
+              <Route index element={<Home />} />
+              <Route path='home' element={<Home />} />
+              <Route path='sermon' element={<Sermon />} />
+              {/* <Route path='*' element={<NoMatch />} /> */}
+          </Route>
+      </Routes>
+    </div>
+    
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
@@ -21,7 +34,6 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Blog/>
   );
 }
 
