@@ -16,22 +16,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-
-const sections = [
-  { title: '主頁', url: './home' },
-  { title: '聚會時間', url: '#' },
-  { title: '崇拜講道', url: './sermon' },
-  { title: '行事曆', url: './plan' },
-  { title: '聯絡我們', url: '.contact' },
-];
-
-const mainBanner = {
-  title: '基督教芥菜種子堂',
-  description: '十週年特刊',
-  image: 'banner-10th.png',
-  imageText: 'main image description',
-  linkText: '歡迎下載',
-};
+import { MAIN_BANNER, MENU_ITEMS } from './config';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -105,9 +90,9 @@ export default function Sermon() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
-        <Header title="Sermon" sections={sections} />
+        <Header title="Sermon" sections={MENU_ITEMS} />
         <main>
-          <Banner post={mainBanner} />
+          <Banner post={MAIN_BANNER} />
 
           <Grid container spacing={4} sx={{pl:'30px',mt:'30px',}}>
             <TableContainer component={Paper} sx={{mx:'30px',}}>

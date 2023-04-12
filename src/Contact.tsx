@@ -11,22 +11,7 @@ import Header from './Header';
 import Banner from './Banner';
 import Footer from './Footer';
 import bg from './assets/bg.png';
-
-const sections = [
-  { title: '主頁', url: './home' },
-  { title: '聚會時間', url: '#' },
-  { title: '崇拜講道', url: './sermon' },
-  { title: '行事曆', url: './plan' },
-  { title: '聯絡我們', url: './contact' },
-];
-
-const mainBanner = {
-  title: '基督教芥菜種子堂',
-  description: '十週年特刊',
-  image: 'banner-10th.png',
-  imageText: 'main image description',
-  linkText: '歡迎下載',
-};
+import { MAIN_BANNER, MENU_ITEMS } from './config';
 
 // const theme = createTheme();
 const theme = createTheme({
@@ -51,9 +36,9 @@ export default function Contact() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
-        <Header title="Blog" sections={sections} />
+        <Header title="Contact" sections={MENU_ITEMS} />
         <main>
-          <Banner post={mainBanner} />
+          <Banner post={MAIN_BANNER} />
 
           <Grid container spacing={4} sx={{px:'30px',}}>
             <Grid item xs={12} md={12}>

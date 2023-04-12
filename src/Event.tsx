@@ -9,6 +9,7 @@ import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
+import { LEGENDS } from './config';
 // import WorkIcon from '@mui/icons-material/Work';
 
 const legends = [
@@ -73,9 +74,9 @@ export default function Event({id}: EventProps) {
     }
   }
 
-  for (index in legends) {
-    if (legends[index].type === type) {
-      color = legends[index].color;
+  for (index in LEGENDS) {
+    if (LEGENDS[index].type === type) {
+      color = LEGENDS[index].color;
       break;
     }
   }

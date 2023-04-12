@@ -30,31 +30,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 // import WorkIcon from '@mui/icons-material/Work';
-
-const sections = [
-  { title: '主頁', url: './home' },
-  { title: '聚會時間', url: '#' },
-  { title: '崇拜講道', url: './sermon' },
-  { title: '行事曆', url: './plan' },
-  { title: '聯絡我們', url: './contact' },
-];
-
-const mainBanner = {
-  title: '基督教芥菜種子堂',
-  description: '十週年特刊',
-  image: 'banner-10th.png',
-  imageText: 'main image description',
-  linkText: '歡迎下載',
-};
-
-const legends = [
-  { type:'A', name: '全體', color: '#9933ff' },
-  { type:'I', name: '自由/有興趣', color: '#D9A98B' },
-  { type:'Y', name: '年輕人', color: '#33cc33' },
-  { type:'C', name:'兒童/婦女', color: '#F63A2B' },
-  { type:'F', name: '家庭', color: '#ff99ff' },
-  { type:'S' ,name: '個人/同工', color: '#007F66' },
-];
+import { LEGENDS, MAIN_BANNER, MENU_ITEMS } from './config';
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
@@ -104,9 +80,9 @@ export default function Plan() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
-        <Header title="Sermon" sections={sections} />
+        <Header title="Plan" sections={MENU_ITEMS} />
         <main>
-          <Banner post={mainBanner} />
+          <Banner post={MAIN_BANNER} />
 
           <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
@@ -116,7 +92,7 @@ export default function Plan() {
 
           <Stack direction='row' justifyContent='flex-end' sx={{px:'30px',}}>
               <List component={Stack} direction='row' spacing={2} width='560px'>
-                {legends.map((legend) => (
+                {LEGENDS.map((legend) => (
                   <ListItem disablePadding>
                     <ListItemIcon sx={{minWidth:'22px',}}>
                         {legend.type === 'A' && 
