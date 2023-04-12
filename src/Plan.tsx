@@ -21,6 +21,19 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import GroupsIcon from '@mui/icons-material/Groups';
+import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
+import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+// import WorkIcon from '@mui/icons-material/Work';
 
 const sections = [
   { title: '主頁', url: './home' },
@@ -39,12 +52,12 @@ const mainBanner = {
 };
 
 const legends = [
-  { type:'A', name: '全體', icon: '' },
-  { type:'I',name: '自由/有興趣', icon: '' },
-  { type:'Y', name: '年輕人', icon: '' },
-  { type:'C', name:'兒童/婦女', icon: '' },
-  { type:'F', name: '家庭', icon: '' },
-  { type:'S' ,name: '個人/同工', icon: '' },
+  { type:'A', name: '全體', color: '#9933ff' },
+  { type:'I', name: '自由/有興趣', color: '#D9A98B' },
+  { type:'Y', name: '年輕人', color: '#33cc33' },
+  { type:'C', name:'兒童/婦女', color: '#F63A2B' },
+  { type:'F', name: '家庭', color: '#ff99ff' },
+  { type:'S' ,name: '個人/同工', color: '#007F66' },
 ];
 
 const data = [
@@ -132,29 +145,50 @@ export default function Plan() {
         <main>
           <Banner post={mainBanner} />
 
-          <Grid container spacing={4} sx={{pl:'30px',mt:'30px',}}>
-            <Typography variant="h4" color="inherit" sx={{pl:'30px', pb:'20px',}}>
-            年題：堅勇飛躍　心靈壯固
-            </Typography>
+          <Grid container spacing={4} direction="row" sx={{pl:'30px',}}>
+            <Grid item xs={12} md={12}>
+              <Typography variant="h4" color="inherit">
+              年題：堅勇飛躍　心靈壯固
+              </Typography>
+            </Grid>
 
-            <Toolbar
-              component="nav"
-              variant="dense"
-              sx={{ justifyContent: 'flex-end', overflowX: 'auto',}}
-            >
-              {legends.map((legend) => (
-                <Link
-                  color="inherit"
-                  noWrap
-                  key={legend.type}
-                  variant="body2"
-                  href={legend.icon}
-                  sx={{ p:2, flexShrink:0, textDecoration:'none', color:'#726d5f', fontWeight:'400',}}
-                >
-                  <Typography variant="h6">{legend.name}</Typography>
-                </Link>
-              ))}
-            </Toolbar>
+            <Grid item xs={12} md={12} sx={{border:'0px solid red',}} textAlign='right'>
+              <List component={Stack} direction="row" spacing={2} width='560px' sx={{border:'0px solid blue',}}>
+                {legends.map((legend) => (
+                  <ListItem disablePadding>
+                    <ListItemIcon sx={{minWidth:'22px',}}>
+                        {legend.type === 'A' && 
+                          <GroupsIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'I' && 
+                          <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'Y' && 
+                          <LocalFloristIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'C' && 
+                          <FavoriteIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'F' && 
+                          <HomeIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'S' && 
+                          <PersonIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                    </ListItemIcon>
+                    <ListItemText 
+                      primary={legend.name}
+                      primaryTypographyProps={{ 
+                        variant: 'subtitle1', 
+                        style: {
+                            whiteSpace: 'nowrap',
+                        }
+                    }} 
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </Grid>
 
             <TableContainer component={Paper} sx={{mx:'30px',}}>
               <Table sx={{ minWidth: 650 }} size="small" aria-label="customized table">
