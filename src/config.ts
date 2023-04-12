@@ -17,10 +17,10 @@ export const MAIN_BANNER = {
 };
 
 export const LEGENDS = [
-    { type:'A', name: '全體', color: '#9933ff' },
-    { type:'I', name: '自由/有興趣', color: '#D9A98B' },
-    { type:'Y', name: '年輕人', color: '#33cc33' },
-    { type:'C', name:'兒童/婦女', color: '#F63A2B' },
-    { type:'F', name: '家庭', color: '#ff99ff' },
-    { type:'S' ,name: '個人/同工', color: '#007F66' },
-  ];
+  { type:'A', name: '全體', color: '#9933ff' },
+  { type:'I', name: '自由/有興趣', color: '#D9A98B' },
+  { type:'Y', name: '年輕人', color: '#33cc33' },
+  { type:'C', name:'兒童/婦女', color: '#F63A2B' },
+  { type:'F', name: '家庭', color: '#ff99ff' },
+  { type:'S' ,name: '個人/同工', color: '#007F66' },
+];
