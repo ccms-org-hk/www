@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/www/static/css/main.2034054f.css",
-    "main.js": "/www/static/js/main.05f57ca1.js",
+    "main.js": "/www/static/js/main.263b1025.js",
     "static/js/787.4af0fb89.chunk.js": "/www/static/js/787.4af0fb89.chunk.js",
     "static/media/banner-10th.png": "/www/static/media/banner-10th.60ac579cec267126a27d.png",
     "static/media/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.jpg": "/www/static/media/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.4bb57e9e9a9c5a49b559.jpg",
@@ -11,11 +11,11 @@
     "static/media/mustard-seed.jpg": "/www/static/media/mustard-seed.c5998c977f0d58ddb56c.jpg",
     "index.html": "/www/index.html",
     "main.2034054f.css.map": "/www/static/css/main.2034054f.css.map",
-    "main.05f57ca1.js.map": "/www/static/js/main.05f57ca1.js.map",
+    "main.263b1025.js.map": "/www/static/js/main.263b1025.js.map",
     "787.4af0fb89.chunk.js.map": "/www/static/js/787.4af0fb89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2034054f.css",
-    "static/js/main.05f57ca1.js"
+    "static/js/main.263b1025.js"
   ]
 }
