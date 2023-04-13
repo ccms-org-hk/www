@@ -1,7 +1,11 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import { Routes, Route } from 'react-router-dom'
+import { 
+  // BrowserRouter as Router, 
+  Routes, 
+  Route 
+} from 'react-router-dom'
 import Home from './Home';
 import Sermon from './Sermon';
 import Plan from './Plan';
@@ -11,16 +15,18 @@ import Contact from './Contact';
 function App() {
   return (
     <div className='App'>
-      <Routes>
+      {/* <Router basename='/hk'> */}
+        <Routes>
           <Route path='/'>
               <Route index element={<Home />} />
-              <Route path='home' element={<Home />} />
-              <Route path='sermon' element={<Sermon />} />
-              <Route path='plan' element={<Plan />} />
-              <Route path='contact' element={<Contact />} />
+              <Route path={`${process.env.PUBLIC_URL}/home`} element={<Home />} />
+              <Route path={`${process.env.PUBLIC_URL}/sermon`} element={<Sermon />} />
+              <Route path={`${process.env.PUBLIC_URL}/plan`} element={<Plan />} />
+              <Route path={`${process.env.PUBLIC_URL}/contact`} element={<Contact />} />
               <Route path='*' element={<Home />} />
           </Route>
-      </Routes>
+        </Routes>
+      {/* </Router> */}
     </div>
 
     // <div className="App">

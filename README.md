@@ -38,6 +38,8 @@ npm uninstall react-google-maps
 npm install --save google-maps-react
 npm uninstall google-maps-react
 
+npm install --save-dev gh-pages
+
 
 # Getting Started with Create React App
 
