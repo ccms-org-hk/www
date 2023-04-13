@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   // Comment-out the StrictMode becos of using google-map-react
   // <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={'/hk'}>
       <App />
     </BrowserRouter>
   // </React.StrictMode>
