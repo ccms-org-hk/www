@@ -55,6 +55,8 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.body}`]: {
     fontSize: 18,
     borderRight: '1px solid rgba(224, 224, 224, 1)',
+    paddingLeft: '6px',
+    paddingRight: '6px',
   },
 }));
 
@@ -155,11 +157,11 @@ export default function Plan() {
                         <StyledTableCell component="th" scope="row">1月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={27} /></StyledTableCell>
+                        <StyledTableCell rowSpan={12} sx={{maxWidth:'100px',}}><Event id={27} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={1} /><Event id={2} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={28} /><Event id={29} /><Event id={30} /></StyledTableCell>
+                        <StyledTableCell rowSpan={12} sx={{maxWidth:'100px',}}><Event id={28} /><Event id={29} /><Event id={30} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>

@@ -12,15 +12,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import { LEGENDS } from './config';
 // import WorkIcon from '@mui/icons-material/Work';
 
-const legends = [
-  { type:'A', name: '全體', color: '#9933ff' },
-  { type:'I', name: '自由/有興趣', color: '#D9A98B' },
-  { type:'Y', name: '年輕人', color: '#33cc33' },
-  { type:'C', name:'兒童/婦女', color: '#F63A2B' },
-  { type:'F', name: '家庭', color: '#ff99ff' },
-  { type:'S' ,name: '個人/同工', color: '#007F66' },
-];
-
 const data = [
   {id:1, type:'I', title:'新年探訪', desc:'',},
   {id:2, type:'C', title:'婦女組', desc:'',},
@@ -82,7 +73,7 @@ export default function Event({id}: EventProps) {
   }
 
   return (
-    <List dense sx={{mb:0, pb:0}}>
+    <List dense sx={{mb:0, pb:0,}}>
       <ListItem disablePadding alignItems='flex-start'>
         <ListItemIcon sx={{minWidth:'22px', mt:'5px',}}>
             {type === 'A' && 
