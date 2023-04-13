@@ -9,6 +9,7 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import Banner from './Banner';
+import SimpleMap from './Map';
 import Footer from './Footer';
 import bg from './assets/bg.png';
 import { MAIN_BANNER, MENU_ITEMS } from './config';
@@ -42,10 +43,8 @@ export default function Contact() {
 
           <Grid container spacing={4} sx={{px:'30px',}}>
             <Grid item xs={12} md={12}>
-              <Card sx={{ height:'100%',}}>
-                <CardContent sx={{textAlign:'left',}}>
-                  ABC
-                </CardContent>
+              <Card variant='outlined' sx={{ height:'500px',}}>
+                <SimpleMap />
               </Card>
             </Grid>
           </Grid>

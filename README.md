@@ -26,6 +26,19 @@ npm uninstall convert-excel-to-json
 Search image from:
 https://www.freepik.com/
 
+Google Map React:
+npm install --save google-map-react
+npm i --save-dev @types/google-map-react
+
+Install but failed, so uninstall:
+npm i -S @react-google-maps/api
+npm uninstall @react-google-maps/api
+npm install --save react-google-maps
+npm uninstall react-google-maps
+npm install --save google-maps-react
+npm uninstall google-maps-react
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

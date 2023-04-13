@@ -6,6 +6,7 @@ import Home from './Home';
 import Sermon from './Sermon';
 import Plan from './Plan';
 import Contact from './Contact';
+// import NoMatch from './404';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
               <Route path='sermon' element={<Sermon />} />
               <Route path='plan' element={<Plan />} />
               <Route path='contact' element={<Contact />} />
-              {/* <Route path='*' element={<NoMatch />} /> */}
+              <Route path='*' element={<Home />} />
           </Route>
       </Routes>
     </div>
