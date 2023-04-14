@@ -99,7 +99,7 @@ export default function Plan() {
           </Stack>
 
           <Stack direction='row' justifyContent='flex-end' sx={{px:'30px',}}>
-              <List component={Stack} direction='row' spacing={2} width='560px'>
+              <List component={Stack} direction='row' spacing={2} width='560px' sx={{overflowX: 'scroll'}}>
                 {LEGENDS.map((legend) => (
                   <ListItem disablePadding>
                     <ListItemIcon sx={{minWidth:'22px',}}>

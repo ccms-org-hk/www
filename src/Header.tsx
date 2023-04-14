@@ -41,7 +41,19 @@ export default function Header(props: HeaderProps) {
             key={section.title}
             variant="body2"
             href={section.url}
-            sx={{ py:2, px:1.5, flexShrink:0, textDecoration:'none', color:'#726d5f', fontWeight:'700', fontSize:'1.15rem',}}
+            sx={{ 
+              py:2, 
+              px: 1.5, 
+              flexShrink:0, 
+              textDecoration:'none', 
+              color:'#726d5f', 
+              fontWeight:'700', 
+              fontSize: {
+                sm:'1.1rem', 
+                md:'1.15rem', 
+                lg:'1.15rem'
+              },
+            }}
           >
             {section.title}
           </Link>
