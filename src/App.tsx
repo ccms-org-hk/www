@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Home from './Home';
+import Gathering from './Gathering';
 import Sermon from './Sermon';
 import Plan from './Plan';
 import Contact from './Contact';
@@ -14,8 +15,8 @@ function App() {
       <Routes>
         <Route path='/'>
             <Route index element={<Home />} />
-            {/* <Route path={`${process.env.PUBLIC_URL}/home`} element={<Home />} /> */}
             <Route path='/home' element={<Home />} />
+            <Route path='/gathering' element={<Gathering />} />
             <Route path='/sermon' element={<Sermon />} />
             <Route path='/plan' element={<Plan />} />
             <Route path='/contact' element={<Contact />} />

@@ -13,7 +13,7 @@ root.render(
   // Comment-out the StrictMode becos of using google-map-react
   // <React.StrictMode>
 
-    // <BrowserRouter basename={'/hk'}>
+    // <BrowserRouter basename={'/www'}>
     <HashRouter>  
       <App />
     </HashRouter>

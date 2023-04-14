@@ -65,7 +65,7 @@ export default function Banner(props: BannerProps) {
             <Typography component="h1" variant="h3" color="inherit" paragraph sx={{fontStyle: 'italic'}}>
               {post.description}
             </Typography>
-            <Link variant="h6" target='_blank' href="/CCMS-10th-anniversary.pdf" sx={{textDecoration:'none', color:'#ffffff', fontStyle: 'italic'}}>
+            <Link variant="h6" target='_blank' href={`${process.env.PUBLIC_URL}/CCMS-10th-anniversary.pdf`} sx={{textDecoration:'none', color:'#ffffff', fontStyle: 'italic'}}>
               {post.linkText}
             </Link>
           </Box>
