@@ -30,7 +30,12 @@ export default function Header(props: HeaderProps) {
         component="nav"
         variant="dense"
         sx={{ 
-          justifyContent: 'flex-end', 
+          justifyContent: {
+            xs:'center', 
+            sm:'center',
+            md:'flex-end',
+            lg:'flex-end',
+          }, 
           overflowX: 'auto',
         }}
       >
@@ -43,13 +48,19 @@ export default function Header(props: HeaderProps) {
             href={section.url}
             sx={{ 
               py:2, 
-              px: 1.5, 
+              px: {
+                xs: 1,
+                sm: 1,
+                md: 1.5,
+                lg: 1.5,
+              }, 
               flexShrink:0, 
               textDecoration:'none', 
               color:'#726d5f', 
               fontWeight:'700', 
               fontSize: {
-                sm:'1.08rem', 
+                xs:'1.1rem',
+                sm:'1.1rem', 
                 md:'1.15rem', 
                 lg:'1.15rem'
               },
