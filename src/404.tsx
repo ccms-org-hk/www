@@ -9,7 +9,6 @@ import bg from './assets/bg.png';
 import { MENU_ITEMS } from './config';
 import { Typography } from '@mui/material';
 
-
 // const theme = createTheme();
 const theme = createTheme({
   components: {
@@ -35,10 +34,13 @@ export default function Home() {
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
         <Header title="Home" sections={MENU_ITEMS} />
         <main>
-          <Stack direction='row' sx={{px:'30px',}}>
-            <Typography variant='h3'>
-            Oops! 這個頁面已經不存在了。
-            </Typography>
+          <Stack spacing={2} justifyContent='center' alignItems='center' sx={{height:'400px', backgroundColor:'#E0E0E0'}}>
+            <Stack justifyContent='center'>
+              <Typography variant='h2'>404</Typography>
+            </Stack>
+            <Stack justifyContent='center'>
+              <Typography variant='h4'>找不到網頁</Typography>
+            </Stack>
           </Stack>
         </main>
         <Footer />
