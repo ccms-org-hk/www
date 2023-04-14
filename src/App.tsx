@@ -6,7 +6,7 @@ import Home from './Home';
 import Sermon from './Sermon';
 import Plan from './Plan';
 import Contact from './Contact';
-// import NoMatch from './404';
+import NotFound from './404';
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
         <Route path='/'>
             <Route index element={<Home />} />
             {/* <Route path={`${process.env.PUBLIC_URL}/home`} element={<Home />} /> */}
-            <Route path={`${process.env.PUBLIC_URL}/home`} element={<Home />} />
-            <Route path={`${process.env.PUBLIC_URL}/sermon`} element={<Sermon />} />
-            <Route path={`${process.env.PUBLIC_URL}/plan`} element={<Plan />} />
-            <Route path={`${process.env.PUBLIC_URL}/contact`} element={<Contact />} />
-            <Route path='*' element={<Home />} />
+            <Route path='/home' element={<Home />} />
+            <Route path='/sermon' element={<Sermon />} />
+            <Route path='/plan' element={<Plan />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
     </div>
