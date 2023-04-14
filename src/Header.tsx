@@ -59,8 +59,8 @@ export default function Header(props: HeaderProps) {
               color:'#726d5f', 
               fontWeight:'700', 
               fontSize: {
-                xs:'1.1rem',
-                sm:'1.1rem', 
+                xs:'1.08rem',
+                sm:'1.08rem', 
                 md:'1.15rem', 
                 lg:'1.15rem'
               },
