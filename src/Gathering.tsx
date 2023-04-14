@@ -18,7 +18,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { MAIN_BANNER, MENU_ITEMS } from './config';
+import { MENU_ITEMS } from './config';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -43,22 +43,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(
-  col1: string,
-  col2: string,
-  col3: string,
-) {
-  return { col1, col2, col3};
-}
-
-const rows = [
-  createData("每月第１週","星期日 10:30am – 12:00pm","聖餐主日"),
-  createData("每月第２週","星期日 10:30am – 12:00pm",""),
-  createData("每月第３週","星期日 3:00pm – 4:30pm",""),
-  createData("每月第４週","星期日 10:30am – 12:00pm",""),
-  createData("每月第５週","星期日 10:30am – 12:00pm",""),
-];
-
 const theme = createTheme({
   components: {
     MuiCssBaseline: {
@@ -76,6 +60,27 @@ const theme = createTheme({
   }
 });
 
+function createData(
+  col1: string,
+  col2: string,
+  col3: string,
+) {
+  return { col1, col2, col3};
+}
+
+const rows = [
+  createData("每月第１週","星期日 10:30am – 12:00pm","聖餐主日"),
+  createData("每月第２週","星期日 10:30am – 12:00pm",""),
+  createData("每月第３週","星期日 3:00pm – 4:30pm",""),
+  createData("每月第４週","星期日 10:30am – 12:00pm",""),
+  createData("每月第５週","星期日 10:30am – 12:00pm",""),
+];
+
+const bannerContent = {
+  id: 1,
+  description: '聚會時間',
+};
+
 export default function Gathering() {
   return (
     <ThemeProvider theme={theme}>
@@ -83,11 +88,11 @@ export default function Gathering() {
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
         <Header title="Gathering" sections={MENU_ITEMS} />
         <main>
-          <Banner post={MAIN_BANNER} />
+          <Banner post={bannerContent} />
 
           <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
-            崇拜聚會
+            崇拜
             </Typography>
           </Stack>
 

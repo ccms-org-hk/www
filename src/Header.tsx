@@ -1,9 +1,5 @@
 import * as React from 'react';
 import Toolbar from '@mui/material/Toolbar';
-// import Button from '@mui/material/Button';
-// import IconButton from '@mui/material/IconButton';
-// import SearchIcon from '@mui/icons-material/Search';
-import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Logo from './assets/ccms-logo-330.jpg';
 
@@ -23,37 +19,20 @@ export default function Header(props: HeaderProps) {
 
   return (
     <React.Fragment>
+  
       <Toolbar sx={{ 
         // borderBottom: 1, 
         // borderColor: 'divider' 
       }}>
-        <img src={Logo} alt='' />
-
-        {/* <Button size="small">Subscribe</Button> */}
-
-        {/* <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          sx={{ flex: 1 }}
-        >
-          {title}
-        </Typography> */}
-
-        {/* <IconButton>
-          <SearchIcon />
-        </IconButton> */}
-
-        {/* <Button variant="outlined" size="small">
-          Sign up
-        </Button> */}
+        <Link href={`${process.env.PUBLIC_URL}/`}><img src={Logo} alt='' /></Link>
       </Toolbar>
       <Toolbar
         component="nav"
         variant="dense"
-        sx={{ justifyContent: 'flex-end', overflowX: 'auto',}}
+        sx={{ 
+          justifyContent: 'flex-end', 
+          overflowX: 'auto',
+        }}
       >
         {sections.map((section) => (
           <Link
@@ -62,9 +41,9 @@ export default function Header(props: HeaderProps) {
             key={section.title}
             variant="body2"
             href={section.url}
-            sx={{ p:2, flexShrink:0, textDecoration:'none', color:'#726d5f', fontWeight:'400',}}
+            sx={{ py:2, px:1.5, flexShrink:0, textDecoration:'none', color:'#726d5f', fontWeight:'700', fontSize:'1.15rem',}}
           >
-            <Typography variant="h6">{section.title}</Typography>
+            {section.title}
           </Link>
         ))}
       </Toolbar>

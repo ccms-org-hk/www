@@ -5,20 +5,24 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import BannerHome from './assets/banner-10th.png';
-// import BannerNormal from './assets/ccms-banner-01.jpg';
+import BannerNormal from './assets/ccms-banner-01.jpg';
 
 interface BannerProps {
   post: {
+    id: number;
     description: string;
-    image: string;
-    imageText: string;
-    linkText: string;
-    title: string;
+    image?: string;
+    imageText?: string;
+    linkText?: string;
+    title?: string;
   };
 }
 
 export default function Banner(props: BannerProps) {
   const { post } = props;
+
+  const url = (post.id === 0)? `url(${BannerHome})` : `url(${BannerNormal})`;
+  const height = (post.id === 0)? '330px' : '160px';
 
   return (
     <Paper
@@ -31,14 +35,18 @@ export default function Banner(props: BannerProps) {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         // backgroundImage: `url(${post.image})`,
-        backgroundImage: `url(${BannerHome})`,
+        backgroundImage: `${url}`,
         borderRadius: 0,
-        height: '330px',
+        height: {height},
       }}
     >
       {/* Increase the priority of the hero background image */}
       {/* {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />} */}
-      {<img style={{ display: 'none' }} src={BannerHome} alt={post.imageText} />}
+      {(post.id === 0)?
+        <img style={{ display: 'none' }} src={BannerHome} alt={post.imageText} />
+        :
+        <img style={{ display: 'none' }} src={BannerNormal} alt='' />
+      }
       <Box
         sx={{
           position: 'absolute',
@@ -54,7 +62,7 @@ export default function Banner(props: BannerProps) {
           <Box
             sx={{
               position: 'relative',
-              p: { xs: 3, md: 6 },
+              p: { xs: 2, md: 4 },
               pr: { md: 0 },
               textAlign: 'left',
             }}

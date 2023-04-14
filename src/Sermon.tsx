@@ -16,7 +16,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { MAIN_BANNER, MENU_ITEMS } from './config';
+import { MENU_ITEMS } from './config';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -40,6 +40,23 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     border: 0,
   },
 }));
+
+const theme = createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: '#E0E0E0',
+          backgroundImage: `url(${bg})`,
+          backgroundRepeat: 'repeat',
+          // "& h1": {
+          //   color: "black"
+          // }
+        }
+      }
+    }
+  }
+});
 
 function createData(
   date: string,
@@ -68,22 +85,10 @@ const rows = [
   createData("2023-01-01","耶穌是君王，常與我們同在","李潤洪 牧師","太 2:1-15"),
 ];
 
-const theme = createTheme({
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        body: {
-          backgroundColor: '#E0E0E0',
-          backgroundImage: `url(${bg})`,
-          backgroundRepeat: 'repeat',
-          // "& h1": {
-          //   color: "black"
-          // }
-        }
-      }
-    }
-  }
-});
+const bannerContent = {
+  id: 1,
+  description: '崇拜講道',
+};
 
 export default function Sermon() {
   return (
@@ -92,7 +97,7 @@ export default function Sermon() {
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
         <Header title="Sermon" sections={MENU_ITEMS} />
         <main>
-          <Banner post={MAIN_BANNER} />
+          <Banner post={bannerContent} />
 
           <Grid container spacing={4} sx={{pl:'30px',mt:'30px',}}>
             <TableContainer component={Paper} sx={{mx:'30px',}}>

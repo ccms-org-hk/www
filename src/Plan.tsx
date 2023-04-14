@@ -30,7 +30,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 // import WorkIcon from '@mui/icons-material/Work';
-import { LEGENDS, MAIN_BANNER, MENU_ITEMS } from './config';
+import { LEGENDS, MENU_ITEMS } from './config';
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   '&:nth-of-type(odd)': {
@@ -77,6 +77,12 @@ const theme = createTheme({
   }
 });
 
+const bannerContent = {
+  id: 1,
+  title: '年題',
+  description: '堅勇飛躍　心靈壯固',
+};
+
 export default function Plan() {
   return (
     <ThemeProvider theme={theme}>
@@ -84,11 +90,11 @@ export default function Plan() {
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
         <Header title="Plan" sections={MENU_ITEMS} />
         <main>
-          <Banner post={MAIN_BANNER} />
+          <Banner post={bannerContent} />
 
           <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
-              年題：堅勇飛躍　心靈壯固
+              2023年 行事曆
             </Typography>
           </Stack>
 

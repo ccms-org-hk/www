@@ -8,14 +8,6 @@ export const MENU_ITEMS = [
   { title: '聯絡我們', url: `${process.env.PUBLIC_URL}/#/contact` },
 ];
 
-export const MAIN_BANNER = {
-  title: '基督教芥菜種子堂',
-  description: '十週年特刊',
-  image: 'banner-10th.png',
-  imageText: 'main image description',
-  linkText: '歡迎下載',
-};
-
 export const LEGENDS = [
   { type:'A', name: '全體', color: '#9933ff' },
   { type:'I', name: '自由/有興趣', color: '#D9A98B' },

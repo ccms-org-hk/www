@@ -11,8 +11,34 @@ import bg from './assets/bg.png';
 import ccmsName from './assets/mustard-seed.jpg';
 import ccmsMission from './assets/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg';
 import ccmsModel from './assets/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.jpg';
-import { MAIN_BANNER, MENU_ITEMS } from './config';
+import { MENU_ITEMS } from './config';
 
+// const theme = createTheme();
+const theme = createTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: '#E0E0E0',
+          backgroundImage: `url(${bg})`,
+          backgroundRepeat: 'repeat',
+          // "& h1": {
+          //   color: "black"
+          // }
+        }
+      }
+    }
+  }
+});
+
+const bannerContent = {
+  id: 0,
+  title: '基督教芥菜種子堂',
+  description: '十週年特刊',
+  image: 'banner-10th.png',
+  imageText: '基督教芥菜種子堂十週年特刊',
+  linkText: '歡迎下載',
+};
 
 const featuredPosts = [
   {
@@ -41,24 +67,6 @@ const featuredPosts = [
   },
 ];
 
-// const theme = createTheme();
-const theme = createTheme({
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        body: {
-          backgroundColor: '#E0E0E0',
-          backgroundImage: `url(${bg})`,
-          backgroundRepeat: 'repeat',
-          // "& h1": {
-          //   color: "black"
-          // }
-        }
-      }
-    }
-  }
-});
-
 export default function Home() {
   return (
     <ThemeProvider theme={theme}>
@@ -66,7 +74,7 @@ export default function Home() {
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
         <Header title="Home" sections={MENU_ITEMS} />
         <main>
-          <Banner post={MAIN_BANNER} />
+          <Banner post={bannerContent} />
 
           <Grid container spacing={4} sx={{px:'30px',}}>
             {featuredPosts.map((post) => (

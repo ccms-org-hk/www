@@ -12,7 +12,7 @@ import Banner from './Banner';
 import SimpleMap from './Map';
 import Footer from './Footer';
 import bg from './assets/bg.png';
-import { MAIN_BANNER, MENU_ITEMS } from './config';
+import { MENU_ITEMS } from './config';
 
 // const theme = createTheme();
 const theme = createTheme({
@@ -32,6 +32,11 @@ const theme = createTheme({
   }
 });
 
+const bannerContent = {
+  id: 1,
+  description: '聯絡我們',
+};
+
 export default function Contact() {
   return (
     <ThemeProvider theme={theme}>
@@ -39,7 +44,7 @@ export default function Contact() {
       <Container maxWidth="lg" disableGutters sx={{backgroundColor:'#ffffff', mt:'25px', mb:'25px', pt:'25px', borderRadius:1, }}>
         <Header title="Contact" sections={MENU_ITEMS} />
         <main>
-          <Banner post={MAIN_BANNER} />
+          <Banner post={bannerContent} />
 
           <Grid container spacing={4} sx={{px:'30px',}}>
             <Grid item xs={12} md={12}>
