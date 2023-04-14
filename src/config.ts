@@ -1,11 +1,11 @@
 // Global Variables
 
 export const MENU_ITEMS = [
-  { title: '主頁', url: '/home' },
+  { title: '主頁', url: `${process.env.PUBLIC_URL}#/home` },
   // { title: '聚會時間', url: '#' },
-  { title: '崇拜講道', url: '/sermon' },
-  { title: '行事曆', url: '/plan' },
-  { title: '聯絡我們', url: '/contact' },
+  { title: '崇拜講道', url: `${process.env.PUBLIC_URL}#/sermon` },
+  { title: '行事曆', url: `${process.env.PUBLIC_URL}#/plan` },
+  { title: '聯絡我們', url: `${process.env.PUBLIC_URL}#/contact` },
 ];
 
 export const MAIN_BANNER = {
