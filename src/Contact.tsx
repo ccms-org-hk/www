@@ -48,8 +48,17 @@ export default function Contact() {
 
           <Grid container spacing={4} sx={{px:'30px',}}>
             <Grid item xs={12} md={12}>
-              <Card variant='outlined' sx={{ height:'500px',}}>
-                <SimpleMap />
+              <Card variant='outlined' sx={{ height:'500px',border:0,}}>
+                {/* <SimpleMap /> */}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1595.318852425338!2d114.1604458078638!3d22.331990637970765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404074cb1714001%3A0x61a8aa1d6ecfab6d!2z6I-v6IuR!5e0!3m2!1szh-TW!2shk!4v1681720325903!5m2!1szh-TW!2shk" 
+                width="100%" 
+                height="100%" 
+                // style="border:0;" 
+                // allowfullscreen="" 
+                loading="lazy" 
+                // referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
               </Card>
             </Grid>
           </Grid>
