@@ -79,7 +79,7 @@ export default function Home() {
           <Grid container spacing={4} sx={{px:'30px',}}>
             {featuredPosts.map((post) => (
               <FeaturedPost 
-              // key={post.title} 
+              key={post.title} 
               post={post} />
             ))}
           </Grid>
