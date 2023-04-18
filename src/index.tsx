@@ -4,8 +4,8 @@ import './index.css';
 import './config';
 import App from './App';
 import {
-  BrowserRouter, 
-  // HashRouter,
+  // BrowserRouter, 
+  HashRouter,
 } from 'react-router-dom';
 // import reportWebVitals from './reportWebVitals';
 
@@ -16,11 +16,11 @@ root.render(
   // Comment-out the StrictMode becos of using google-map-react
   // <React.StrictMode>
 
-    <BrowserRouter>
-    {/* <HashRouter>   */}
+    // <BrowserRouter>
+    <HashRouter>  
       <App />
-    {/* </HashRouter> */}
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
 
   // </React.StrictMode>
 );

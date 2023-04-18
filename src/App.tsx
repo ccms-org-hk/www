@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Home from './Home';
-import Gathering from './Gathering';
+import Gathering from './Home';
 import Sermon from './Sermon';
 import Plan from './Plan';
 import Contact from './Contact';
@@ -19,7 +19,7 @@ function App() {
             <Route path='/gathering' element={<Gathering />} />
             <Route path='/sermon' element={<Sermon />} />
             <Route path='/plan' element={<Plan />} />
-            <Route path='/contact-us' element={<Contact />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
