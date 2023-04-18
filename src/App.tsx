@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
 import Home from './Home';
-import Gathering from './Home';
+import Gathering from './Gathering';
 import Sermon from './Sermon';
 import Plan from './Plan';
 import Contact from './Contact';
