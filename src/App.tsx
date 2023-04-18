@@ -19,7 +19,7 @@ function App() {
             <Route path='/gathering' element={<Gathering />} />
             <Route path='/sermon' element={<Sermon />} />
             <Route path='/plan' element={<Plan />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact-us' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>
