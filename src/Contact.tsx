@@ -77,7 +77,8 @@ export default function Contact() {
                     教會堂主任　：錢國偉 牧師<br/>
                     義務傳道　　：賀文亮 傳道<br/>
                     義務助理傳道：孔德承 傳道<br/>
-                    義務顧問　　：李潤洪 牧師
+                    義務顧問　　：李潤洪 牧師<br/>
+                    福音幹事　　：何歷同 先生
                   </Typography>
                 </CardContent>
               </Card>
