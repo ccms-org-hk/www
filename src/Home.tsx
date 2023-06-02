@@ -68,6 +68,11 @@ const featuredPosts = [
 ];
 
 export default function Home() {
+
+  React.useEffect(() => {
+    document.title = "基督教芥菜種子堂 | 主頁";  
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

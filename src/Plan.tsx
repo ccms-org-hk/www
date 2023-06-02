@@ -84,6 +84,11 @@ const bannerContent = {
 };
 
 export default function Plan() {
+
+  React.useEffect(() => {
+    document.title = "基督教芥菜種子堂 | 行事曆";  
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

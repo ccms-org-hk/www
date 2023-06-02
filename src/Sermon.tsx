@@ -99,6 +99,11 @@ const bannerContent = {
 };
 
 export default function Sermon() {
+
+  React.useEffect(() => {
+    document.title = "基督教芥菜種子堂 | 崇拜講道";  
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
