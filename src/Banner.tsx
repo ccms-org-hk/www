@@ -20,7 +20,6 @@ interface BannerProps {
 
 export default function Banner(props: BannerProps) {
   const { post } = props;
-
   const url = (post.id === 0)? `url(${BannerHome})` : `url(${BannerNormal})`;
   const height = (post.id === 0)? '330px' : '160px';
 
@@ -42,11 +41,9 @@ export default function Banner(props: BannerProps) {
     >
       {/* Increase the priority of the hero background image */}
       {/* {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />} */}
-      {(post.id === 0)?
-        <img style={{ display: 'none' }} src={BannerHome} alt={post.imageText} />
-        :
-        <img style={{ display: 'none' }} src={BannerNormal} alt='' />
-      }
+      {/* Preload images: */}
+      <img style={{ display: 'none' }} src={BannerHome} alt={post.imageText} loading='eager' />
+      <img style={{ display: 'none' }} src={BannerNormal} alt='' loading='eager' />
       <Box
         sx={{
           position: 'absolute',
