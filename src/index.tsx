@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './config';
 import App from './App';
+import ReactGA from 'react-ga4';
 import {
   // BrowserRouter, 
   HashRouter,
 } from 'react-router-dom';
 // import reportWebVitals from './reportWebVitals';
+
+ReactGA.initialize('G-2Q058B5P14');
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

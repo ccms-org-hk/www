@@ -40,6 +40,8 @@ npm uninstall google-maps-react
 
 npm install --save-dev gh-pages
 
+npm i react-ga4
+
 
 # Getting Started with Create React App
 
