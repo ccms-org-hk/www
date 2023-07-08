@@ -42,6 +42,8 @@ npm install --save-dev gh-pages
 
 npm i react-ga4
 
+### `npm run build`
+### `npm run deploy`
 
 # Getting Started with Create React App
 
