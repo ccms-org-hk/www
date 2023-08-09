@@ -1,6 +1,15 @@
 
 # My Steps
+No "Git" in mac:
+- install brew
+- install git via brew
 
+No "npm" in mac:
+- install Node.js version 18
+
+To run "npm run deploy", you need Github Personal Access Token
+
+# How to create the app
 npx create-react-app www --template typescript
 cd www
 rm README.old.md
