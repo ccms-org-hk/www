@@ -68,6 +68,7 @@ function createData(
 }
 
 const rows = [
+  createData("2023-08-13","擇善固執","賀文亮 傳道","徒 9:1-31"),
   createData("2023-08-06","生命中幾個重要的學習","錢國偉 牧師","民 20:1-13"),
   createData("2023-07-30","沒有神蹟的神蹟","梁錦華 先生","約 4:1-42"),
   createData("2023-07-23","Everything is Wrong!?","孔德承 傳道","徒 8:4-8, 26-40"),
