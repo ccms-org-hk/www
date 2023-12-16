@@ -139,7 +139,7 @@ export default function Gathering() {
                 <TableHead>
                   <TableRow>
                     <StyledTableCell>對象</StyledTableCell>
-                    <StyledTableCell>團契/小組名稱</StyledTableCell>
+                    <StyledTableCell>團契／小組名稱</StyledTableCell>
                     <StyledTableCell>時間</StyledTableCell>
                   </TableRow>
                 </TableHead>
