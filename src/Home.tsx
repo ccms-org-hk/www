@@ -33,11 +33,12 @@ const theme = createTheme({
 
 const bannerContent = {
   id: 0,
-  title: '基督教芥菜種子堂',
-  description: '十週年特刊',
-  image: 'banner-10th.png',
-  imageText: '基督教芥菜種子堂十週年特刊',
-  linkText: '歡迎下載',
+  // title: '基督教芥菜種子堂',
+  // description: '十週年特刊',
+  // image: 'banner-10th.png',
+  image: 'ccms-banner-00.jpg',
+  // imageText: '基督教芥菜種子堂十週年特刊',
+  // linkText: '歡迎下載',
 };
 
 const featuredPosts = [

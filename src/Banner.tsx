@@ -4,13 +4,14 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-import BannerHome from './assets/banner-10th.png';
+// import BannerHome from './assets/banner-10th.png';
+import BannerHome from './assets/ccms-banner-00.jpg';
 import BannerNormal from './assets/ccms-banner-01.jpg';
 
 interface BannerProps {
   post: {
     id: number;
-    description: string;
+    description?: string;
     image?: string;
     imageText?: string;
     linkText?: string;
