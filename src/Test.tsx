@@ -17,6 +17,7 @@ import logoHkcnp from './assets/logo-128-hkcnp.png';
 import logoHkief from './assets/logo-128-hkief.png';
 import logoHtc from './assets/logo-128-htc.png';
 import logoWse from './assets/logo-128-wse.png';
+import logoHmcc from './assets/logo-128-hmcc.png';
 import { MENU_ITEMS } from './config';
 
 // const theme = createTheme();
@@ -94,6 +95,11 @@ const collaborators = [
       title: '城市的盼望',
       image: `${logoHtc}`,
       imageLabel: '城市的盼望',
+    },
+    {
+      title: 'Harvest Mission Community Church',
+      image: `${logoHmcc}`,
+      imageLabel: 'Harvest Mission Community Church',
     },
     {
       title: '和富社會企業',
