@@ -7,6 +7,7 @@ import Gathering from './Gathering';
 import Sermon from './Sermon';
 import Plan from './Plan';
 import Contact from './Contact';
+import Test from './Test';
 import NotFound from './404';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='/sermon' element={<Sermon />} />
             <Route path='/plan' element={<Plan />} />
             <Route path='/contact' element={<Contact />} />
+            <Route path='/test' element={<Test />} />
             <Route path='*' element={<NotFound />} />
         </Route>
       </Routes>

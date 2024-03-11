@@ -75,34 +75,34 @@ const featuredPosts = [
 ];
 
 const collaborators = [
-  {
-    title: '恩澤堂',
-    image: `${logoChurch}`,
-    imageLabel: '恩澤堂',
-  },
-  {
-    title: '教會關懷貧窮網絡',
-    image: `${logoHkcnp}`,
-    imageLabel: '教會關懷貧窮網絡',
-  },
-  {
-    title: '工業福音團契',
-    image: `${logoHkief}`,
-    imageLabel: '工業福音團契',
-  },
-  {
-    title: '城市的盼望',
-    image: `${logoHtc}`,
-    imageLabel: '城市的盼望',
-  },
-  {
-    title: '和富社會企業',
-    image: `${logoWse}`,
-    imageLabel: '和富社會企業',
-  },
-];
+    {
+      title: '恩澤堂',
+      image: `${logoChurch}`,
+      imageLabel: '恩澤堂',
+    },
+    {
+      title: '教會關懷貧窮網絡',
+      image: `${logoHkcnp}`,
+      imageLabel: '教會關懷貧窮網絡',
+    },
+    {
+      title: '工業福音團契',
+      image: `${logoHkief}`,
+      imageLabel: '工業福音團契',
+    },
+    {
+      title: '城市的盼望',
+      image: `${logoHtc}`,
+      imageLabel: '城市的盼望',
+    },
+    {
+      title: '和富社會企業',
+      image: `${logoWse}`,
+      imageLabel: '和富社會企業',
+    },
+  ];
 
-export default function Home() {
+export default function Test() {
 
   React.useEffect(() => {
     document.title = "基督教芥菜種子堂";  
@@ -121,6 +121,14 @@ export default function Home() {
               <FeaturedPost 
               key={post.title} 
               post={post} />
+            ))}
+          </Grid>
+          
+          <Grid container spacing={4} sx={{px:'30px',}}>
+            {collaborators.map((collaborator) => (
+              <Collaboration 
+              key={collaborator.title} 
+              collaborator={collaborator} />
             ))}
           </Grid>
 
