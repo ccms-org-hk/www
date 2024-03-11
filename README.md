@@ -46,10 +46,13 @@ npm install --save react-google-maps
 npm uninstall react-google-maps
 npm install --save google-maps-react
 npm uninstall google-maps-react
+npm uninstall google-map-react
+npm uninstall @types/google-map-react
 
 npm install --save-dev gh-pages
 
 npm i react-ga4
+<!-- npm uninstall react-ga4 -->
 
 ### `npm run build`
 ### `npm run deploy`
