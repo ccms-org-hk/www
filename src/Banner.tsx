@@ -65,15 +65,15 @@ export default function Banner(props: BannerProps) {
               textAlign: 'left',
             }}
           >
-            <Typography variant="subtitle1" color="inherit" gutterBottom sx={{fontStyle: 'italic'}}>
+            <Typography variant="subtitle1" color="inherit" gutterBottom sx={{fontStyle: 'italic', textShadow:'2px 2px 4px rgba(0,0,0,0.25), -2px -2px 4px rgba(0,0,0,0.25)'}}>
               {post.title}
             </Typography>
-            <Typography component="h1" variant="h3" color="inherit" paragraph sx={{fontStyle: 'italic'}}>
+            <Typography component="h1" variant="h3" color="inherit" paragraph sx={{fontStyle: 'italic', textShadow:'2px 2px 4px rgba(0,0,0,0.25), -2px -2px 4px rgba(0,0,0,0.25)'}}>
               {post.description}
             </Typography>
-            <Link variant="h6" target='_blank' href={`${process.env.PUBLIC_URL}/CCMS-10th-anniversary.pdf`} underline='hover' sx={{color:'#ffffff', fontStyle: 'italic'}}>
+            {/* <Link variant="h6" target='_blank' href={`${process.env.PUBLIC_URL}/CCMS-10th-anniversary.pdf`} underline='hover' sx={{color:'#ffffff', fontStyle: 'italic'}}>
               {post.linkText}
-            </Link>
+            </Link> */}
           </Box>
         </Grid>
       </Grid>
