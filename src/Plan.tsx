@@ -24,6 +24,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import GroupsIcon from '@mui/icons-material/Groups';
+import PeopleIcon from '@mui/icons-material/People';
 import FreeBreakfastIcon from '@mui/icons-material/FreeBreakfast';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -79,8 +80,8 @@ const theme = createTheme({
 
 const bannerContent = {
   id: 1,
-  title: '年題',
-  description: '堅勇飛躍　心靈壯固',
+  // title: '年題',
+  description: '2024年 行事曆',
 };
 
 export default function Plan() {
@@ -97,19 +98,22 @@ export default function Plan() {
         <main>
           <Banner post={bannerContent} />
 
-          <Stack direction='row' sx={{px:'30px',}}>
+          {/* <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
               2023年 行事曆
             </Typography>
-          </Stack>
+          </Stack> */}
 
           <Stack direction='row' justifyContent='flex-end' sx={{px:'30px',}}>
-              <List component={Stack} direction='row' spacing={2} width='560px' sx={{overflowX: 'scroll'}}>
+              <List component={Stack} direction='row' spacing={2} width='650px' sx={{overflowX: 'auto'}}>
                 {LEGENDS.map((legend) => (
                   <ListItem disablePadding>
                     <ListItemIcon sx={{minWidth:'22px',}}>
                         {legend.type === 'A' && 
                           <GroupsIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'G' && 
+                          <PeopleIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'I' && 
                           <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
@@ -149,18 +153,16 @@ export default function Plan() {
                       <StyledTableCell rowSpan={2}>&nbsp;</StyledTableCell>
                       <StyledTableCell align='center'>聽神的道</StyledTableCell>
                       <StyledTableCell align='center'>領受神的道</StyledTableCell>
-                      <StyledTableCell align='center' colSpan={4}>傳講神的道</StyledTableCell>
+                      <StyledTableCell align='center' colSpan={3}>傳講神的道</StyledTableCell>
                       <StyledTableCell align='center' rowSpan={2}>兒童</StyledTableCell>
-                      <StyledTableCell align='center' rowSpan={2}>培訓</StyledTableCell>
-                      <StyledTableCell align='center' rowSpan={2}>其他</StyledTableCell>
+                      <StyledTableCell align='center' rowSpan={2}>培訓/其他</StyledTableCell>
                     </TableRow>
                     <TableRow>
                       <StyledTableCell align='center'>崇拜聚會</StyledTableCell>
                       <StyledTableCell align='center'>小組聚會</StyledTableCell>
-                      <StyledTableCell align='center'>家庭</StyledTableCell>
-                      <StyledTableCell align='center'>學校</StyledTableCell>
-                      <StyledTableCell align='center'>社區</StyledTableCell>
-                      <StyledTableCell align='center'>宣教</StyledTableCell>
+                      <StyledTableCell align='center'>會友/家庭</StyledTableCell>
+                      <StyledTableCell align='center'>男士/婦女</StyledTableCell>
+                      <StyledTableCell align='center'>社區家庭</StyledTableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -168,12 +170,10 @@ export default function Plan() {
                         <StyledTableCell component="th" scope="row">1月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell rowSpan={12} sx={{maxWidth:'100px',}}><Event id={27} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={25} /><Event id={26} /></StyledTableCell>
+                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={27} /><Event id={28} /></StyledTableCell>
                         <StyledTableCell><Event id={1} /><Event id={2} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell rowSpan={12} sx={{maxWidth:'100px',}}><Event id={28} /><Event id={29} /><Event id={30} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={29} /><Event id={30} /><Event id={31} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
@@ -181,110 +181,77 @@ export default function Plan() {
                         <StyledTableCell><Event id={3} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={2} /><Event id={4} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">3月</StyledTableCell>
+                        <StyledTableCell><Event id={4} /><Event id={5} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={5} /></StyledTableCell>
+                        <StyledTableCell><Event id={6} /><Event id={7} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={6} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">4月</StyledTableCell>
-                        <StyledTableCell><Event id={7} /><Event id={8} /></StyledTableCell>
-                        <StyledTableCell><Event id={9} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={10} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={11} /><Event id={12} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={8} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">5月</StyledTableCell>
-                        <StyledTableCell><Event id={13} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={2} /><Event id={14} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={9} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">6月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={15} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={10} /></StyledTableCell>
+                        <StyledTableCell><Event id={11} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">7月</StyledTableCell>
-                        <StyledTableCell><Event id={16} /></StyledTableCell>
+                        <StyledTableCell><Event id={12} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={17} /><Event id={18} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={13} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">8月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={18} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={14} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">9月</StyledTableCell>
-                        <StyledTableCell><Event id={19} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={15} /></StyledTableCell>
+                        <StyledTableCell><Event id={16} /><Event id={17} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={20} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={6} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">10月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={21} /></StyledTableCell>
-                        <StyledTableCell><Event id={22} /></StyledTableCell>
-                        <StyledTableCell><Event id={2} /></StyledTableCell>
+                        <StyledTableCell><Event id={18} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={19} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">11月</StyledTableCell>
-                        <StyledTableCell><Event id={23} /></StyledTableCell>
+                        <StyledTableCell><Event id={20} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={2} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={24} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={21} /></StyledTableCell>
+                        <StyledTableCell></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">12月</StyledTableCell>
-                        <StyledTableCell><Event id={25} /></StyledTableCell>
+                        <StyledTableCell><Event id={22} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={26} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={23} /></StyledTableCell>
+                        <StyledTableCell><Event id={24} /></StyledTableCell>
                       </StyledTableRow>
                   </TableBody>
                 </Table>

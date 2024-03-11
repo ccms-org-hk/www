@@ -33,8 +33,8 @@ const theme = createTheme({
 
 const bannerContent = {
   id: 0,
-  // title: '基督教芥菜種子堂',
-  // description: '十週年特刊',
+  title: '2024-25 年題',
+  description: '協作服侍 培育領袖',
   // image: 'banner-10th.png',
   image: 'ccms-banner-00.jpg',
   // imageText: '基督教芥菜種子堂十週年特刊',
@@ -71,7 +71,7 @@ const featuredPosts = [
 export default function Home() {
 
   React.useEffect(() => {
-    document.title = "基督教芥菜種子堂 | 主頁";  
+    document.title = "基督教芥菜種子堂";  
   }, []);
 
   return (
