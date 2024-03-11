@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.2034054f.css",
-    "main.js": "/static/js/main.c85c8ff2.js",
-    "static/media/banner-10th.png": "/static/media/banner-10th.60ac579cec267126a27d.png",
+    "main.js": "/static/js/main.5dce8658.js",
     "static/media/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.jpg": "/static/media/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.4bb57e9e9a9c5a49b559.jpg",
     "static/media/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg": "/static/media/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.a60714709e9eacda393a.jpg",
+    "static/media/ccms-banner-00.jpg": "/static/media/ccms-banner-00.19c3aba3817903ce0b50.jpg",
     "static/media/ccms-banner-01.jpg": "/static/media/ccms-banner-01.cdfaa4cc1649e654b531.jpg",
     "static/media/bg.png": "/static/media/bg.73f596cbb828988f1d59.png",
     "static/media/ccms-logo-330.jpg": "/static/media/ccms-logo-330.c7fcb52c6f66e8ff092d.jpg",
     "static/media/mustard-seed.jpg": "/static/media/mustard-seed.c5998c977f0d58ddb56c.jpg",
     "index.html": "/index.html",
     "main.2034054f.css.map": "/static/css/main.2034054f.css.map",
-    "main.c85c8ff2.js.map": "/static/js/main.c85c8ff2.js.map"
+    "main.5dce8658.js.map": "/static/js/main.5dce8658.js.map"
   },
   "entrypoints": [
     "static/css/main.2034054f.css",
-    "static/js/main.c85c8ff2.js"
+    "static/js/main.5dce8658.js"
   ]
 }
