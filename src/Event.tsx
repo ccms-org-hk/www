@@ -42,8 +42,8 @@ const data = [
   {id:26, type:'G', title:"每年至少一次個別見面關心會友", desc:'',},
   {id:27, type:'C', title:"每月1次", desc:'「男士小組」',},
   {id:28, type:'C', title:"4-9月", desc:'「婦女興趣班」',},
-  {id:29, type:'I', title:'每主日', desc:'「兒童主日學」',},
-  {id:30, type:'I', title:'每週末早上', desc:'「我長大了」',},
+  {id:29, type:'I', title:'每週末早上', desc:'「我長大了」',},
+  {id:30, type:'I', title:'每主日', desc:'「兒童主日學」',},
   {id:31, type:'I', title:'每主日下午', desc:'「少年團契」',},
 ];
 
