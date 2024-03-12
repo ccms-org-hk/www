@@ -1,7 +1,7 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-// import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from './Header';
 import Banner from './Banner';
@@ -80,8 +80,8 @@ const theme = createTheme({
 
 const bannerContent = {
   id: 1,
-  // title: '年題',
-  description: '2024年 行事曆',
+  title: '2024-25 年題',
+  description: '協作服侍 培育領袖',
 };
 
 export default function Plan() {
@@ -98,11 +98,11 @@ export default function Plan() {
         <main>
           <Banner post={bannerContent} />
 
-          {/* <Stack direction='row' sx={{px:'30px',}}>
+          <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
-              2023年 行事曆
+              2024年 行事曆
             </Typography>
-          </Stack> */}
+          </Stack>
 
           <Stack direction='row' justifyContent='flex-end' sx={{px:'30px',}}>
               <List component={Stack} direction='row' spacing={2} width='650px' sx={{overflowX: 'auto'}}>

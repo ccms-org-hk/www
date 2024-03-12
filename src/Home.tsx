@@ -133,7 +133,7 @@ export default function Home() {
 
           <Stack spacing={2} sx={{m:'50px', mt:'80px'}}>
             <Typography align="center" component="h2" variant="h5" sx={{mb:1}}>
-              協作夥伴
+              合作夥伴
             </Typography>
             <Typography variant="subtitle1" paragraph>
               本堂透過與下列機構及教會緊密合作，為社區內的基層家庭提供及籌辦兒童補習、家庭探訪、認識香港、戶外旅行、童樂家庭主日、各式工作坊等活動，歡迎致電查詢。
