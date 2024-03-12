@@ -1,5 +1,7 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
+import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -77,34 +79,33 @@ const featuredPosts = [
 
 const collaborators = [
     {
-      title: '恩澤堂',
-      image: `${logoChurch}`,
-      imageLabel: '恩澤堂',
+      name: '恩澤堂',
+      logo: `${logoChurch}`,
     },
     {
-      title: '教會關懷貧窮網絡',
-      image: `${logoHkcnp}`,
-      imageLabel: '教會關懷貧窮網絡',
+      name: '教會關懷貧窮網絡',
+      logo: `${logoHkcnp}`,
+      link: 'https://www.hkcnp.org.hk',
     },
     {
-      title: '工業福音團契',
-      image: `${logoHkief}`,
-      imageLabel: '工業福音團契',
+      name: '工業福音團契',
+      logo: `${logoHkief}`,
+      link: 'https://www.hkief.org.hk',
     },
     {
-      title: '城市的盼望',
-      image: `${logoHtc}`,
-      imageLabel: '城市的盼望',
+      name: '城市的盼望',
+      logo: `${logoHtc}`,
+      link: 'https://www.hopeofthecity.com',
     },
     {
-      title: 'Harvest Mission Community Church',
-      image: `${logoHmcc}`,
-      imageLabel: 'Harvest Mission Community Church',
+      name: 'Harvest Mission Community Church',
+      logo: `${logoHmcc}`,
+      link: 'https://hongkong.hmcc.net',
     },
     {
-      title: '和富社會企業',
-      image: `${logoWse}`,
-      imageLabel: '和富社會企業',
+      name: '和富社會企業',
+      logo: `${logoWse}`,
+      link: 'https://wse.hk',
     },
   ];
 
@@ -129,11 +130,20 @@ export default function Test() {
               post={post} />
             ))}
           </Grid>
-          
-          <Grid container spacing={4} sx={{px:'30px',}}>
+
+          <Stack spacing={2} sx={{m:'50px', mt:'80px'}}>
+            <Typography align="center" component="h2" variant="h5" sx={{mb:1}}>
+              協作夥伴
+            </Typography>
+            <Typography variant="subtitle1" paragraph>
+              本堂透過與下列機構及教會緊密合作，為社區內的基層家庭提供及籌辦兒童補習、家庭探訪、認識香港、戶外旅行、童樂家庭主日、各式工作坊等活動，歡迎致電查詢。
+            </Typography>
+          </Stack>
+
+          <Grid container alignItems="center" sx={{p:'60px', pt:'10px', mb:'150px'}}>
             {collaborators.map((collaborator) => (
               <Collaboration 
-              key={collaborator.title} 
+              key={collaborator.name} 
               collaborator={collaborator} />
             ))}
           </Grid>
