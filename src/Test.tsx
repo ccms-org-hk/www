@@ -79,7 +79,7 @@ const featuredPosts = [
 
 const collaborators = [
     {
-      name: '恩澤堂',
+      name: '基督教會恩澤堂',
       logo: `${logoChurch}`,
     },
     {

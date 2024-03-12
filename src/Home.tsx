@@ -79,9 +79,8 @@ const featuredPosts = [
 
 const collaborators = [
   {
-    name: '恩澤堂',
+    name: '基督教會恩澤堂',
     logo: `${logoChurch}`,
-    link: '',
   },
   {
     name: '教會關懷貧窮網絡',

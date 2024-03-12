@@ -24,6 +24,7 @@ export default function Collaboration(props: CollaborationProps) {
           <img
           src={collaborator.logo}
           alt={collaborator.name}
+          title={collaborator.name}
           loading="lazy"
           />
         </a>
