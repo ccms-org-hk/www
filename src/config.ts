@@ -1,10 +1,11 @@
 // Global Variables
 
 export const MENU_ITEMS = [
-  { title: '主頁', url: `${process.env.PUBLIC_URL}/#/home` },
+  // { title: '主頁', url: `${process.env.PUBLIC_URL}/#/home` },
   { title: '聚會時間', url: `${process.env.PUBLIC_URL}/#/gathering` },
   { title: '崇拜講道', url: `${process.env.PUBLIC_URL}/#/sermon` },
   { title: '行事曆', url: `${process.env.PUBLIC_URL}/#/plan` },
+  { title: '下載', url: `${process.env.PUBLIC_URL}/#/download` },
   { title: '聯絡我們', url: `${process.env.PUBLIC_URL}/#/contact` },
 ];
 
