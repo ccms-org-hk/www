@@ -140,7 +140,7 @@ export default function Home() {
             </Typography>
           </Stack>
 
-          <Grid container alignItems="center" sx={{p:'60px', pt:'10px', mb:'150px'}}>
+          <Grid container alignItems="center" sx={{p:'50px', pt:'10px', mb:'150px'}}>
             {collaborators.map((collaborator) => (
               <Collaboration 
               key={collaborator.name} 
