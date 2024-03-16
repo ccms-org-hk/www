@@ -19,7 +19,7 @@ import logoHkcnp from './assets/logo-128-hkcnp.png';
 import logoHkief from './assets/logo-128-hkief.png';
 import logoHtc from './assets/logo-128-htc.png';
 import logoWse from './assets/logo-128-wse.png';
-import logoHmcc from './assets/logo-128-hmcc.png';
+import logoCityServe from './assets/logo-128-cityserve.png';
 import { MENU_ITEMS } from './config';
 
 // const theme = createTheme();
@@ -98,9 +98,9 @@ const collaborators = [
     link: 'https://www.hopeofthecity.com',
   },
   {
-    name: 'Harvest Mission Community Church',
-    logo: `${logoHmcc}`,
-    link: 'https://hongkong.hmcc.net',
+    name: 'CityServe Hong Kong',
+    logo: `${logoCityServe}`,
+    link: 'https://cityservehk.org',
   },
   {
     name: '和富社會企業',
