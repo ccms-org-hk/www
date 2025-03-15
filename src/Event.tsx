@@ -21,7 +21,7 @@ const data = [
   {id:4, type:'F', title:'堂委退修會', desc:'',},
   {id:5, type:'A', title:'預苦期開始', desc:'',},
   {id:6, type:'C', title:'童樂家庭主日', desc:'16/3',},
-  {id:7, type:'G', title:'嘉年華', desc:'22/3',},
+  {id:7, type:'G', title:'嘉年華會', desc:'22/3',},
   {id:8, type:'A', title:'受難節晚會', desc:'',},
   {id:9, type:'A', title:'復活節崇拜', desc:'',},
   {id:10, type:'C', title:'義工服務', desc:'12/4',},
@@ -57,9 +57,9 @@ const data = [
   {id:40, type:'C', title:'童樂家庭主日', desc:'',}, 
   //
   {id:41, type:'S', title:"1年最少6次探訪", desc:'',},
-  {id:42, type:'I', title:'平日:補習活動', desc:'',},
-  {id:43, type:'I', title:'逢週六:我長大了', desc:'',},
-  {id:44, type:'I', title:'逢週日:兒童主日學', desc:'',},
+  {id:42, type:'I', title:'補習活動', desc:'平日',},
+  {id:43, type:'I', title:'我長大了', desc:'逢週六',},
+  {id:44, type:'I', title:'兒童主日學', desc:'逢週日',},
 ];
 
 interface EventProps {
@@ -102,9 +102,9 @@ export default function Event({id}: EventProps) {
             {type === 'I' && 
               <FreeBreakfastIcon fontSize='small' htmlColor={color} />
             }
-            {type === 'Y' && 
+            {/* {type === 'Y' && 
               <LocalFloristIcon fontSize='small' htmlColor={color} />
-            }
+            } */}
             {type === 'C' && 
               <FavoriteIcon fontSize='small' htmlColor={color} />
             }

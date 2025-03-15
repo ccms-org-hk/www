@@ -170,10 +170,10 @@ export default function Plan() {
                         <StyledTableCell component="th" scope="row">25年1月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={41} /></StyledTableCell>
+                        <StyledTableCell rowSpan={15} sx={{maxWidth:'120px',}}><Event id={41} /></StyledTableCell>
                         <StyledTableCell><Event id={1} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell rowSpan={12} sx={{maxWidth:'120px',}}><Event id={42} /><Event id={43} /><Event id={44} /></StyledTableCell>
+                        <StyledTableCell rowSpan={15} sx={{maxWidth:'120px',}}><Event id={42} /><Event id={43} /><Event id={44} /></StyledTableCell>
                         <StyledTableCell><Event id={2} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
@@ -270,16 +270,16 @@ export default function Plan() {
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={35} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={36} /></StyledTableCell>
+                        <StyledTableCell><Event id={37} /></StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">2月</StyledTableCell>
-                        <StyledTableCell><Event id={37} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={38} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={39} /></StyledTableCell>
+                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>  
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">3月</StyledTableCell>

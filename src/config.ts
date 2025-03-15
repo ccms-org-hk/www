@@ -37,6 +37,6 @@ export const LEGENDS = [
   { type:'I', name: '兒童/少年', color: '#D9A98B' },
   // { type:'Y', name: '年輕人', color: '#33cc33' },
   { type:'C', name: '個人', color: '#F63A2B' },
-  { type:'F', name: '堂委/司事', color: '#33cc33' },
-  { type:'S' ,name: '同工', color: '#007F66' },
+  { type:'F', name: '堂委/司事', color: '#007F66' },
+  { type:'S' ,name: '同工', color: '#33cc33' },
 ];
