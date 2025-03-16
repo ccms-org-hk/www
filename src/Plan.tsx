@@ -100,7 +100,7 @@ export default function Plan() {
 
           <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
-              2025/26年 行事曆（暫定）
+              2025/26年 行事曆
             </Typography>
           </Stack>
 
