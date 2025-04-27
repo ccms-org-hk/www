@@ -14,7 +14,7 @@ export default function Collaboration(props: CollaborationProps) {
   const { collaborator } = props;
 
   return (
-    <Grid item xs={6} md={2}>
+    <Grid item md={3} xs={6}>
       <Box
         display="flex"
         justifyContent="center"
