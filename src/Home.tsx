@@ -20,6 +20,7 @@ import logoHkief from './assets/logo-128-hkief.png';
 import logoHtc from './assets/logo-128-htc.png';
 import logoWse from './assets/logo-128-wse.png';
 import logoCityServe from './assets/logo-128-cityserve.png';
+import logoSWCF from './assets/logo-128-shihwingchingfoundation.png';
 import { MENU_ITEMS } from './config';
 
 // const theme = createTheme();
@@ -101,6 +102,11 @@ const collaborators = [
     name: 'CityServe Hong Kong',
     logo: `${logoCityServe}`,
     link: 'https://cityservehk.org',
+  },
+  {
+    name: '施永青基金',
+    logo: `${logoSWCF}`,
+    link: 'https://www.shihwingchingfoundation.org',
   },
   {
     name: '和富社會企業',
