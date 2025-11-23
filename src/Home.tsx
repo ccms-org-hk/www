@@ -14,7 +14,7 @@ import bg from './assets/bg.png';
 import ccmsName from './assets/mustard-seed.jpg';
 import ccmsMission from './assets/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg';
 import ccmsModel from './assets/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.jpg';
-import logoChurch from './assets/logo-128-church.png';
+import logoChurch from './assets/logo-140-ccc.png';
 import logoHkcnp from './assets/logo-128-hkcnp.png';
 import logoHkief from './assets/logo-128-hkief.png';
 import logoHtc from './assets/logo-128-htc.png';
