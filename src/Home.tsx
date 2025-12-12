@@ -15,10 +15,11 @@ import ccmsName from './assets/mustard-seed.jpg';
 import ccmsMission from './assets/spirituality-religion-hands-folded-prayer-holy-bible-church-concept-faith.jpg';
 import ccmsModel from './assets/four-unrecognizable-people-sitting-around-table-holding-each-other-s-hands-middle.jpg';
 import logoChurch from './assets/logo-140-ccc.png';
+import logoSbhk from './assets/logo-140-sbhk.png';
 import logoHkcnp from './assets/logo-128-hkcnp.png';
 import logoHkief from './assets/logo-128-hkief.png';
 import logoHtc from './assets/logo-128-htc.png';
-import logoWse from './assets/logo-128-wse.png';
+// import logoWse from './assets/logo-128-wse.png';
 import logoCityServe from './assets/logo-128-cityserve.png';
 import logoSWCF from './assets/logo-128-shihwingchingfoundation.png';
 import { MENU_ITEMS } from './config';
@@ -94,9 +95,9 @@ const collaborators = [
     link: 'https://www.hkief.org.hk',
   },
   {
-    name: '城市的盼望',
-    logo: `${logoHtc}`,
-    link: 'https://www.hopeofthecity.com',
+    name: '馬鞍峰教會',
+    logo: `${logoSbhk}`,
+    link: 'https://sbhk.teachable.com',
   },
   {
     name: 'CityServe Hong Kong',
@@ -104,15 +105,20 @@ const collaborators = [
     link: 'https://cityservehk.org',
   },
   {
+    name: '城市的盼望',
+    logo: `${logoHtc}`,
+    link: 'https://www.hopeofthecity.com',
+  },
+  {
     name: '施永青基金',
     logo: `${logoSWCF}`,
     link: 'https://www.shihwingchingfoundation.org',
   },
-  {
-    name: '和富社會企業',
-    logo: `${logoWse}`,
-    link: 'https://wse.hk',
-  },
+  // {
+  //   name: '和富社會企業',
+  //   logo: `${logoWse}`,
+  //   link: 'https://wse.hk',
+  // },
 ];
 
 export default function Home() {
@@ -146,7 +152,7 @@ export default function Home() {
             </Typography>
           </Stack>
 
-          <Grid container alignItems="center" sx={{p:'50px', pt:'10px', mb:'150px'}}>
+          <Grid container alignItems="center" sx={{p:'30px', mb:'150px'}}>
             {collaborators.map((collaborator) => (
               <Collaboration 
               key={collaborator.name} 
