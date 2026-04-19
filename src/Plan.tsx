@@ -80,8 +80,8 @@ const theme = createTheme({
 
 const bannerContent = {
   id: 1,
-  title: '2024-25 年題',
-  description: '協作服侍 培育領袖',
+  title: '2026-28 年題',
+  description: '默想聖言 凝聚合一 躍動使命',
 };
 
 export default function Plan() {

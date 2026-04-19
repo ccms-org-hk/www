@@ -44,8 +44,8 @@ const theme = createTheme({
 
 const bannerContent = {
   id: 0,
-  title: '2024-25 年題',
-  description: '協作服侍 培育領袖',
+  title: '2026-28 年題',
+  description: '默想聖言 凝聚合一 躍動使命',
   // image: 'banner-10th.png',
   image: 'ccms-banner-00.jpg',
   // imageText: '基督教芥菜種子堂十週年特刊',
