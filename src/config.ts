@@ -46,8 +46,8 @@ export const LEGENDS = [
   { type:'A', name: '全體', color: '#9933ff' },
   { type:'G', name: '小組', color: '#3D9DD9' },
   { type:'I', name: '兒童/少年', color: '#D9A98B' },
-  { type:'L', name: '堂委/領袖', color: '#666666' },
   { type:'C', name: '個人', color: '#F63A2B' },
   { type:'F', name: '社區/親子', color: '#ff99ff' },
+  { type:'L', name: '堂委/領袖', color: '#666666' },
   { type:'S' ,name: '其他', color: '#33cc33' },
 ];
