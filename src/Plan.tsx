@@ -123,13 +123,13 @@ export default function Plan() {
                           <HomeIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'C' && 
-                          <PersonIcon fontSize='small' htmlColor={legend.color} />
+                          <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'F' && 
                           <FavoriteIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'S' && 
-                          <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
+                          <PersonIcon fontSize='small' htmlColor={legend.color} />
                         }
                     </ListItemIcon>
                     <ListItemText 
@@ -168,7 +168,7 @@ export default function Plan() {
                   </TableHead>
                   <TableBody>
                       <StyledTableRow>
-                        <StyledTableCell component="th" scope="row">26年3月</StyledTableCell>
+                        <StyledTableCell component="th" scope="row">26年<br/>3月</StyledTableCell>
                         <StyledTableCell><Event id={1} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={2} /></StyledTableCell>
@@ -181,7 +181,7 @@ export default function Plan() {
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">4月</StyledTableCell>
                         <StyledTableCell><Event id={10} /><Event id={11} /></StyledTableCell>
-                        <StyledTableCell><Event id={12} /></StyledTableCell>
+                        <StyledTableCell sx={{maxWidth:'120px',}}><Event id={12} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={13} /></StyledTableCell>
                         <StyledTableCell><Event id={14} /></StyledTableCell>
@@ -270,7 +270,7 @@ export default function Plan() {
                       </StyledTableRow>
 
                       <StyledTableRow>
-                        <StyledTableCell component="th" scope="row">27年1月</StyledTableCell>
+                        <StyledTableCell component="th" scope="row">27年<br/>1月</StyledTableCell>
                         <StyledTableCell><Event id={47} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={48} /></StyledTableCell>
