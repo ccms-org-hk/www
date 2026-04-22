@@ -22,7 +22,7 @@ const data = [
   {id:5, type:'I', title:'#每週日「少年團契」', desc:'',},
   {id:6, type:'I', title:'#每週日「兒童主日學」', desc:'',},
   {id:7, type:'L', title:'#約每月1次「領袖訓練」', desc:'',},
-  {id:8, type:'L', title:'#約每月1次敬拜隊團契及練習', desc:'',},
+  {id:8, type:'L', title:'#約每月1次 敬拜隊團契及練習', desc:'',},
   {id:9, type:'L', title:'1/3 堂委退修會', desc:'',},
   {id:10, type:'A', title:'3/4 受難節晚會', desc:'',},
   {id:11, type:'A', title:'5/4 復活節崇拜', desc:'',},
@@ -37,7 +37,7 @@ const data = [
   {id:20, type:'C', title:'家庭聚會', desc:'',},
   {id:21, type:'F', title:'17/5 親子工作坊', desc:'*子博協助',},
   {id:22, type:'G', title:'27/6 退修日營', desc:'',},
-  {id:23, type:'G', title:'探索恩澤堂會眾融入/開始小組的可能性', desc:'',},
+  {id:23, type:'G', title:'探索恩澤堂會眾融入/開始小組', desc:'',},
   {id:24, type:'F', title:'21/6 童樂家庭主日', desc:'',},
   {id:25, type:'F', title:'6/6 端午節社區探訪', desc:'',},
   {id:26, type:'S', title:'圖書介紹', desc:'',},
@@ -64,7 +64,7 @@ const data = [
   {id:47, type:'A', title:'10/1 兩堂祈禱交流會', desc:'',},
   {id:48, type:'C', title:'探訪會友家庭', desc:'',},
   {id:49, type:'F', title:'童樂家庭主日', desc:'',},
-  {id:50, type:'F', title:'17/1 新春社區探訪/老人院探訪', desc:'',},
+  {id:50, type:'F', title:'17/1 新春 社區/老人院 探訪', desc:'',},
   {id:51, type:'S', title:'圖書介紹', desc:'',},
   {id:52, type:'A', title:'預苦期開始', desc:'',},
   {id:53, type:'C', title:'探訪會友家庭', desc:'',},
@@ -118,13 +118,13 @@ export default function Event({id}: EventProps) {
               <HomeIcon fontSize='small' htmlColor={color} />
             }
             {type === 'C' && 
-              <PersonIcon fontSize='small' htmlColor={color} />
+              <FreeBreakfastIcon fontSize='small' htmlColor={color} />
             }
             {type === 'F' && 
               <FavoriteIcon fontSize='small' htmlColor={color} />
             }
             {type === 'S' && 
-              <FreeBreakfastIcon fontSize='small' htmlColor={color} />
+              <PersonIcon fontSize='small' htmlColor={color} />
             }
         </ListItemIcon>
 
