@@ -114,14 +114,14 @@ export default function Event({id}: EventProps) {
             {type === 'I' && 
               <LocalFloristIcon fontSize='small' htmlColor={color} />
             }
-            {type === 'L' && 
-              <HomeIcon fontSize='small' htmlColor={color} />
-            }
             {type === 'C' && 
               <FreeBreakfastIcon fontSize='small' htmlColor={color} />
             }
             {type === 'F' && 
               <FavoriteIcon fontSize='small' htmlColor={color} />
+            }
+            {type === 'L' && 
+              <HomeIcon fontSize='small' htmlColor={color} />
             }
             {type === 'S' && 
               <PersonIcon fontSize='small' htmlColor={color} />
