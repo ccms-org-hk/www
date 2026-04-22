@@ -119,14 +119,14 @@ export default function Plan() {
                         {legend.type === 'I' && 
                           <LocalFloristIcon fontSize='small' htmlColor={legend.color} />
                         }
-                        {legend.type === 'L' && 
-                          <HomeIcon fontSize='small' htmlColor={legend.color} />
-                        }
                         {legend.type === 'C' && 
                           <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'F' && 
                           <FavoriteIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'L' && 
+                          <HomeIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'S' && 
                           <PersonIcon fontSize='small' htmlColor={legend.color} />
