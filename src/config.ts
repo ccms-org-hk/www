@@ -42,6 +42,7 @@ export const MENU_ITEMS = [
 // ];
 
 // Year 2026: A=全體 G=小組 I=兒童/少年 L=堂委/領袖 C=個人 F=社區/親子 S=其他 
+// this sequence will affect the sequence of Legend items
 export const LEGENDS = [
   { type:'A', name: '全體', color: '#9933ff' },
   { type:'G', name: '小組', color: '#3D9DD9' },
