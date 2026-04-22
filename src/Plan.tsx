@@ -81,7 +81,7 @@ const theme = createTheme({
 const bannerContent = {
   id: 1,
   title: '2026-28 年題',
-  description: '默想聖言 凝聚合一 躍動使命',
+  description: '默想聖言・凝聚合一・躍動使命',
 };
 
 export default function Plan() {
@@ -90,6 +90,7 @@ export default function Plan() {
     document.title = "基督教芥菜種子堂 | 行事曆";  
   }, []);
 
+  // Year 2026: A=全體 G=小組 I=兒童/少年 L=堂委/領袖 C=個人 F=社區/親子 S=其他
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -100,7 +101,7 @@ export default function Plan() {
 
           <Stack direction='row' sx={{px:'30px',}}>
             <Typography variant='h4'>
-              2025/26年 行事曆
+              2026/27年 行事曆
             </Typography>
           </Stack>
 
@@ -116,19 +117,19 @@ export default function Plan() {
                           <PeopleIcon fontSize='small' htmlColor={legend.color} />
                         }
                         {legend.type === 'I' && 
-                          <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
-                        }
-                        {legend.type === 'Y' && 
                           <LocalFloristIcon fontSize='small' htmlColor={legend.color} />
                         }
-                        {legend.type === 'C' && 
-                          <FavoriteIcon fontSize='small' htmlColor={legend.color} />
-                        }
-                        {legend.type === 'F' && 
+                        {legend.type === 'L' && 
                           <HomeIcon fontSize='small' htmlColor={legend.color} />
                         }
-                        {legend.type === 'S' && 
+                        {legend.type === 'C' && 
                           <PersonIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'F' && 
+                          <FavoriteIcon fontSize='small' htmlColor={legend.color} />
+                        }
+                        {legend.type === 'S' && 
+                          <FreeBreakfastIcon fontSize='small' htmlColor={legend.color} />
                         }
                     </ListItemIcon>
                     <ListItemText 
@@ -161,13 +162,13 @@ export default function Plan() {
                       <StyledTableCell align='center'>崇拜聚會</StyledTableCell>
                       <StyledTableCell align='center'>小組聚會</StyledTableCell>
                       <StyledTableCell align='center'>會友家庭</StyledTableCell>
-                      <StyledTableCell align='center'>社區家庭</StyledTableCell>
-                      <StyledTableCell align='center'>社區探訪/活動</StyledTableCell>
+                      <StyledTableCell align='center'>社區家庭/親子</StyledTableCell>
+                      <StyledTableCell align='center'>社區探訪/活動<br/>*(適合個人參與)</StyledTableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
                       <StyledTableRow>
-                        <StyledTableCell component="th" scope="row">25年1月</StyledTableCell>
+                        <StyledTableCell component="th" scope="row">26年3月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell rowSpan={15} sx={{maxWidth:'120px',}}><Event id={41} /></StyledTableCell>
@@ -175,22 +176,6 @@ export default function Plan() {
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell rowSpan={15} sx={{maxWidth:'120px',}}><Event id={42} /><Event id={43} /><Event id={44} /></StyledTableCell>
                         <StyledTableCell><Event id={2} /></StyledTableCell>
-                      </StyledTableRow>
-                      <StyledTableRow>
-                        <StyledTableCell component="th" scope="row">2月</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={3} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={4} /></StyledTableCell>
-                      </StyledTableRow>
-                      <StyledTableRow>
-                        <StyledTableCell component="th" scope="row">3月</StyledTableCell>
-                        <StyledTableCell><Event id={5} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={6} /></StyledTableCell>
-                        <StyledTableCell><Event id={7} /></StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">4月</StyledTableCell>
@@ -266,7 +251,7 @@ export default function Plan() {
                       </StyledTableRow>
 
                       <StyledTableRow>
-                        <StyledTableCell component="th" scope="row">26年1月</StyledTableCell>
+                        <StyledTableCell component="th" scope="row">27年1月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={35} /></StyledTableCell>
