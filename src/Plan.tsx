@@ -181,10 +181,10 @@ export default function Plan() {
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">4月</StyledTableCell>
                         <StyledTableCell><Event id={10} /><Event id={11} /></StyledTableCell>
-                        <StyledTableCell sx={{maxWidth:'120px',}}><Event id={12} /></StyledTableCell>
+                        <StyledTableCell sx={{maxWidth:'110px',}}><Event id={12} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={13} /></StyledTableCell>
-                        <StyledTableCell><Event id={14} /></StyledTableCell>
+                        <StyledTableCell sx={{maxWidth:'110px',}}><Event id={14} /></StyledTableCell>
                         <StyledTableCell><Event id={15} /></StyledTableCell>
                         <StyledTableCell><Event id={16} /><Event id={17} /></StyledTableCell>
                       </StyledTableRow>
