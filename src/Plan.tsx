@@ -146,6 +146,12 @@ export default function Plan() {
               </List>
             </Stack>
 
+          <Stack direction='row' justifyContent='flex-end' sx={{px:'30px',}}>
+            <Typography sx={{fontSize:'small',}}>
+              * 適合個人參與
+            </Typography>
+          </Stack>
+
             <Stack direction='row' sx={{px:'30px',}}>
               <TableContainer component={Paper}>
                 <Table size="small" aria-label="customized table" sx={{ minWidth:'650', }} >
@@ -163,7 +169,7 @@ export default function Plan() {
                       <StyledTableCell align='center'>小組聚會</StyledTableCell>
                       <StyledTableCell align='center'>會友家庭</StyledTableCell>
                       <StyledTableCell align='center'>社區家庭/親子</StyledTableCell>
-                      <StyledTableCell align='center'>社區探訪/活動<br/>*(適合個人參與)</StyledTableCell>
+                      <StyledTableCell align='center'>社區探訪/活動</StyledTableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -193,7 +199,7 @@ export default function Plan() {
                         <StyledTableCell><Event id={18} /></StyledTableCell>
                         <StyledTableCell><Event id={19} /></StyledTableCell>
                         <StyledTableCell><Event id={20} /></StyledTableCell>
-                        <StyledTableCell><Event id={21} /><Event id={22} /></StyledTableCell>
+                        <StyledTableCell><Event id={21} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
@@ -201,7 +207,7 @@ export default function Plan() {
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">6月</StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
-                        <StyledTableCell><Event id={23} /></StyledTableCell>
+                        <StyledTableCell><Event id={22} /><Event id={23} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={24} /></StyledTableCell>
                         <StyledTableCell><Event id={25} /></StyledTableCell>
