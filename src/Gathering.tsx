@@ -64,16 +64,17 @@ function createData(
   col1: string,
   col2: string,
   col3: string,
+  col4: string,
 ) {
-  return { col1, col2, col3};
+  return { col1, col2, col3, col4};
 }
 
 const rows = [
-  createData("每月第１週","星期日 10:30am – 12:00pm","聖餐主日"),
-  createData("每月第２週","星期日 10:30am – 12:00pm",""),
-  createData("每月第３週","星期日 3:00pm – 4:30pm",""),
-  createData("每月第４週","星期日 10:30am – 12:00pm",""),
-  createData("每月第５週","星期日 10:30am – 12:00pm",""),
+  createData("每月第１週","星期日 10:30am – 12:00pm","基督教芥菜種子堂","聖餐主日"),
+  createData("每月第２週","星期日 10:30am – 12:00pm","基督教芥菜種子堂",""),
+  createData("每月第３週","星期日 3:00pm – 4:30pm","基督教芥菜種子堂",""),
+  createData("每月第４週","星期日 10:30am – 12:00pm","基督教會恩澤堂",""),
+  createData("每月第５週","星期日 10:30am – 12:00pm","基督教會恩澤堂",""),
 ];
 
 const bannerContent = {
@@ -108,6 +109,7 @@ export default function Gathering() {
                   <TableRow>
                     <StyledTableCell>主日崇拜</StyledTableCell>
                     <StyledTableCell>時間</StyledTableCell>
+                    <StyledTableCell>地點</StyledTableCell>
                     <StyledTableCell>備註</StyledTableCell>
                   </TableRow>
                 </TableHead>
@@ -120,6 +122,7 @@ export default function Gathering() {
                       <StyledTableCell>{row.col1}</StyledTableCell>
                       <StyledTableCell>{row.col2}</StyledTableCell>
                       <StyledTableCell>{row.col3}</StyledTableCell>
+                      <StyledTableCell>{row.col4}</StyledTableCell>
                     </StyledTableRow>
                   ))}
                 </TableBody>
