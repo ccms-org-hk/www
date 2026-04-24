@@ -140,7 +140,7 @@ export default function Gathering() {
                   <TableRow>
                     <StyledTableCell>對象</StyledTableCell>
                     <StyledTableCell>團契／小組名稱</StyledTableCell>
-                    <StyledTableCell>時間</StyledTableCell>
+                    <StyledTableCell>聚會時間</StyledTableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -152,27 +152,27 @@ export default function Gathering() {
                   <StyledTableRow key={2}>
                     <StyledTableCell>年輕夫婦</StyledTableCell>
                     <StyledTableCell>有孩家庭</StyledTableCell>
-                    <StyledTableCell>每3個月2次</StyledTableCell>
+                    <StyledTableCell>每3個月2次聚會</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={1}>
                     <StyledTableCell>職青</StyledTableCell>
                     <StyledTableCell>陽光芥菜家族</StyledTableCell>
-                    <StyledTableCell>逢週六下午（單週）<br/>逢週六晚上（雙週）</StyledTableCell>
+                    <StyledTableCell>逢星期六下午（單週）<br/>逢星期六晚上（雙週）</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={2}>
                     <StyledTableCell>初職</StyledTableCell>
                     <StyledTableCell>山頂兒女</StyledTableCell>
-                    <StyledTableCell>每月1次</StyledTableCell>
+                    <StyledTableCell>每月1次聚會</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={1}>
                     <StyledTableCell>大專及初職</StyledTableCell>
                     <StyledTableCell>星河同行</StyledTableCell>
-                    <StyledTableCell>逢週日晚上</StyledTableCell>
+                    <StyledTableCell>逢星期日晚上</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={2}>
                     <StyledTableCell>初中</StyledTableCell>
                     <StyledTableCell>少年團契</StyledTableCell>
-                    <StyledTableCell>逢週日中午</StyledTableCell>
+                    <StyledTableCell>逢星期日中午</StyledTableCell>
                   </StyledTableRow>
                   {/* <StyledTableRow key={1}>
                     <StyledTableCell>小學生</StyledTableCell>
