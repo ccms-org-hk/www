@@ -162,7 +162,7 @@ export default function Gathering() {
                   <StyledTableRow key={2}>
                     <StyledTableCell>初職</StyledTableCell>
                     <StyledTableCell>山頂兒女</StyledTableCell>
-                    <StyledTableCell>每月一次</StyledTableCell>
+                    <StyledTableCell>每月1次</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={1}>
                     <StyledTableCell>大專及初職</StyledTableCell>
