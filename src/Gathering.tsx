@@ -145,45 +145,40 @@ export default function Gathering() {
                 </TableHead>
                 <TableBody>
                   <StyledTableRow key={1}>
-                    <StyledTableCell>成人</StyledTableCell>
+                    <StyledTableCell>成人至退休</StyledTableCell>
                     <StyledTableCell>成人組</StyledTableCell>
-                    <StyledTableCell>每月第2及第4週之星期六，6:00pm - 8:00pm</StyledTableCell>
+                    <StyledTableCell>逢第2及第4週之星期六</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={2}>
+                    <StyledTableCell>年輕夫婦</StyledTableCell>
                     <StyledTableCell>有孩家庭</StyledTableCell>
-                    <StyledTableCell>有孩家庭</StyledTableCell>
-                    <StyledTableCell>每2個月1次，日期及時間不定</StyledTableCell>
+                    <StyledTableCell>每3個月2次</StyledTableCell>
                   </StyledTableRow>
-                  {/* <StyledTableRow key={1}>
-                    <StyledTableCell>退休男士</StyledTableCell>
-                    <StyledTableCell>男士小組</StyledTableCell>
-                    <StyledTableCell>每月第4週之星期四，2:00pm - 3:15pm</StyledTableCell>
-                  </StyledTableRow> */}
                   <StyledTableRow key={1}>
                     <StyledTableCell>職青</StyledTableCell>
                     <StyledTableCell>陽光芥菜家族</StyledTableCell>
-                    <StyledTableCell>逢星期六，2:00pm – 4:30pm</StyledTableCell>
+                    <StyledTableCell>逢週六下午（單週）<br/>逢週六晚上（雙週）</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={2}>
                     <StyledTableCell>初職</StyledTableCell>
                     <StyledTableCell>山頂兒女</StyledTableCell>
-                    <StyledTableCell>每月第3週之星期四，7:00pm - 8:30pm</StyledTableCell>
+                    <StyledTableCell>每月一次</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={1}>
                     <StyledTableCell>大專及初職</StyledTableCell>
                     <StyledTableCell>星河同行</StyledTableCell>
-                    <StyledTableCell>逢星期三，8:15pm - 9:45pm</StyledTableCell>
+                    <StyledTableCell>逢週日晚上</StyledTableCell>
                   </StyledTableRow>
                   <StyledTableRow key={2}>
-                    <StyledTableCell>高小及初中</StyledTableCell>
+                    <StyledTableCell>初中</StyledTableCell>
                     <StyledTableCell>少年團契</StyledTableCell>
-                    <StyledTableCell>逢星期日，12:45pm - 2:15pm</StyledTableCell>
+                    <StyledTableCell>逢週日中午</StyledTableCell>
                   </StyledTableRow>
-                  <StyledTableRow key={1}>
+                  {/* <StyledTableRow key={1}>
                     <StyledTableCell>小學生</StyledTableCell>
                     <StyledTableCell>我長大了</StyledTableCell>
                     <StyledTableCell>逢星期六，10:15am - 12:00pm</StyledTableCell>
-                  </StyledTableRow>
+                  </StyledTableRow> */}
                 </TableBody>
               </Table>
             </TableContainer>
