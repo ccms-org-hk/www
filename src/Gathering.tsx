@@ -177,11 +177,6 @@ export default function Gathering() {
                     <StyledTableCell>少年團契</StyledTableCell>
                     <StyledTableCell>逢星期日中午</StyledTableCell>
                   </StyledTableRow>
-                  {/* <StyledTableRow key={1}>
-                    <StyledTableCell>小學生</StyledTableCell>
-                    <StyledTableCell>我長大了</StyledTableCell>
-                    <StyledTableCell>逢星期六，10:15am - 12:00pm</StyledTableCell>
-                  </StyledTableRow> */}
                 </TableBody>
               </Table>
             </TableContainer>

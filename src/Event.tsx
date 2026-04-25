@@ -61,7 +61,7 @@ const data = [
   {id:44, type:'A', title:'除夕感恩分享會', desc:'',},
   {id:45, type:'F', title:'童樂家庭主日', desc:'',},
   {id:46, type:'F', title:'社區嘉年華', desc:'',},
-  {id:47, type:'A', title:'兩堂祈禱交流會', desc:'10/1',},
+  {id:47, type:'A', title:'兩堂祈禱交流會', desc:'10/1: *崇拜後30-40分鐘',},
   {id:48, type:'C', title:'探訪會友家庭', desc:'',},
   {id:49, type:'F', title:'童樂家庭主日', desc:'',},
   {id:50, type:'F', title:'新春社區/老人院探訪', desc:'17/1',},
