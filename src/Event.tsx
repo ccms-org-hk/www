@@ -39,7 +39,7 @@ const data = [
   {id:22, type:'G', title:'退修日營', desc:'27/6',},
   {id:23, type:'G', title:'探索恩澤堂會眾融入/開始小組', desc:'',},
   {id:24, type:'F', title:'童樂家庭主日', desc:'21/6',},
-  {id:25, type:'F', title:'端午節社區探訪', desc:'6/6',},
+  {id:25, type:'F', title:'端午節社區探訪', desc:'14/6',},
   {id:26, type:'S', title:'圖書介紹', desc:'',},
   {id:27, type:'A', title:'十四週年堂慶感恩崇拜', desc:'12/7',},
   {id:28, type:'F', title:'開心過暑假', desc:'',},
