@@ -196,7 +196,7 @@ export default function Plan() {
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">5月</StyledTableCell>
-                        <StyledTableCell><Event id={18} /></StyledTableCell>
+                        <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={19} /></StyledTableCell>
                         <StyledTableCell><Event id={20} /></StyledTableCell>
                         <StyledTableCell><Event id={21} /></StyledTableCell>
@@ -206,7 +206,7 @@ export default function Plan() {
                       </StyledTableRow>
                       <StyledTableRow>
                         <StyledTableCell component="th" scope="row">6月</StyledTableCell>
-                        <StyledTableCell>&nbsp;</StyledTableCell>
+                        <StyledTableCell><Event id={18} /></StyledTableCell>
                         <StyledTableCell><Event id={22} /><Event id={23} /></StyledTableCell>
                         <StyledTableCell>&nbsp;</StyledTableCell>
                         <StyledTableCell><Event id={24} /></StyledTableCell>

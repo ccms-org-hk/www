@@ -32,7 +32,7 @@ const data = [
   {id:15, type:'I', title:'少年團契歷奇營', desc:'1-2/4',},
   {id:16, type:'S', title:'嬰孩奉獻禮', desc:'5/4',},
   {id:17, type:'S', title:'第五屆浸禮', desc:'12/4',},
-  {id:18, type:'A', title:'兩堂祈禱交流會', desc:'31/5: *崇拜後30-40分鐘',},
+  {id:18, type:'A', title:'兩堂祈禱交流會', desc:'7/6: *崇拜後30-40分鐘',},
   {id:19, type:'G', title:'台灣5天自在遊', desc:'21-25/5',},
   {id:20, type:'C', title:'家庭聚會', desc:'',},
   {id:21, type:'F', title:'親子工作坊', desc:'17/5: *子博協助',},
